@@ -1,17 +1,19 @@
 const service = require("./mongod_log.service");
 
 const get_data = async (req, res, next) => {
-  
   try {
     const data = await service.find_data(req);
     if (data.status) {
-      res.json({
-        success: true,
+      return res.json({
         data: data,
       });
     }
+    return res.json({
+      status: false,
+      message: "No data found",
+    });
   } catch (error) {
-    res.json({
+    return res.json({
       success: false,
       message: error.message,
     });
