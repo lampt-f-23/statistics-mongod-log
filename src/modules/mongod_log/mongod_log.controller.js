@@ -1,6 +1,7 @@
 const service = require("./mongod_log.service");
 
 const get_data = async (req, res, next) => {
+  
   try {
     const data = await service.find_data(req);
     if (data.status) {
