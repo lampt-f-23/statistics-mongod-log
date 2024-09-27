@@ -53,35 +53,38 @@ const resultsTotal = async (msgNsPercentages) => {
       for (const msg in msgNsPercentages.msgPercentages) {
         const pipeline = createPipelineResultsTotal(msg, ns);
         const results = await mongod_log.mongodLogModel.aggregate(pipeline);
-
         const response =
           results.length > 0
             ? results[0]
             : { totalRecords: 0, filterFields: {} };
         const formattedResult = [];
 
-        const percentageOnTotalRecords = (count) => {
-          if (totalRecords > 0) {
-            return ((count / totalRecords) * 100).toFixed(6); // Tính phần trăm
-          }
-          return 0; // Nếu totalRecords bằng 0 thì trả về 0%
-        };
+        const percentageOnTotalRecords = (count) =>
+          ((count / totalRecords) * 100).toFixed(6);
 
         // Kiểm tra nếu filterFields tồn tại trước khi xử lý
         if (
           response.filterFields &&
           typeof response.filterFields === "object"
         ) {
-          // Xử lý tất cả các trường trong filter, bao gồm cả $and và $or
           for (const [key, value] of Object.entries(response.filterFields)) {
-            if (value && value.count !== undefined) {
-              const percentage = percentageOnTotalRecords(value.count); // Tính phần trăm
+            if (value !== undefined && value !== null) {
               const detailedFilter = formatFilterField(key, value);
+              console.log(
+                "🚀 ~ resultsTotal ~ response.filterFields:",
+                response.filterFields
+              );
+              console.log(
+                "🚀 ~ resultsTotal ~ detailedFilter:",
+                detailedFilter
+              );
 
               if (detailedFilter) {
-                formattedResult.push(
-                  `attr.command.filter.${detailedFilter} = ${percentage}%`
-                );
+                // Định dạng mới theo yêu cầu
+                formattedResult.push({
+                  attr: `${key} : ${percentageOnTotalRecords(value.count)}%`,
+                  value, // Dữ liệu trong $or hoặc $and
+                });
               }
             }
           }
