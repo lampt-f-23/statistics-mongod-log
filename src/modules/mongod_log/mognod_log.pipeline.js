@@ -187,7 +187,8 @@ const createPipelineResultsTotal = (msg, ns) => {
       {
         $group: {
           _id: "$filterFields.k",
-          count: { $sum: 1 },
+          count: { $sum: 1 }, // Đếm số lượng
+          data: { $first: "$filterFields.v" }, // Lưu giá trị đầu tiên
         },
       },
       {
@@ -197,7 +198,8 @@ const createPipelineResultsTotal = (msg, ns) => {
           filterFields: {
             $push: {
               k: "$_id",
-              v: "$count",
+              v: "$data",
+              count: "$count",
             },
           },
         },
@@ -206,7 +208,33 @@ const createPipelineResultsTotal = (msg, ns) => {
         $project: {
           _id: 0,
           totalRecords: 1,
-          filterFields: { $arrayToObject: "$filterFields" },
+          filterFields: {
+            $arrayToObject: {
+              $map: {
+                input: "$filterFields",
+                as: "field",
+                in: {
+                  k: { $concat: ["attr.command.filter.", "$$field.k"] }, // Tạo key
+                  v: {
+                    data: "$$field.v", // Dữ liệu
+                    count: "$$field.count", // Số lượng
+                    percentage: {
+                      $cond: [
+                        { $gt: ["$totalRecords", 0] },
+                        {
+                          $multiply: [
+                            { $divide: ["$$field.count", "$totalRecords"] }, // Tính phần trăm
+                            100,
+                          ],
+                        },
+                        0, // Nếu totalRecords = 0, trả về 0%
+                      ],
+                    },
+                  },
+                },
+              },
+            },
+          },
         },
       },
     ];

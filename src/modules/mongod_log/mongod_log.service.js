@@ -60,20 +60,29 @@ const resultsTotal = async (msgNsPercentages) => {
             : { totalRecords: 0, filterFields: {} };
         const formattedResult = [];
 
-        const percentageOnTotalRecords = (count) =>
-          ((count / totalRecords) * 100).toFixed(6);
+        const percentageOnTotalRecords = (count) => {
+          if (totalRecords > 0) {
+            return ((count / totalRecords) * 100).toFixed(6); // Tính phần trăm
+          }
+          return 0; // Nếu totalRecords bằng 0 thì trả về 0%
+        };
 
-        // Xử lý tất cả các trường trong filter, bao gồm cả $and và $or
-        for (const [key, value] of Object.entries(response.filterFields)) {
-          if (value !== undefined && value !== null) {
-            const detailedFilter = formatFilterField(key, value);
+        // Kiểm tra nếu filterFields tồn tại trước khi xử lý
+        if (
+          response.filterFields &&
+          typeof response.filterFields === "object"
+        ) {
+          // Xử lý tất cả các trường trong filter, bao gồm cả $and và $or
+          for (const [key, value] of Object.entries(response.filterFields)) {
+            if (value && value.count !== undefined) {
+              const percentage = percentageOnTotalRecords(value.count); // Tính phần trăm
+              const detailedFilter = formatFilterField(key, value);
 
-            if (detailedFilter) {
-              formattedResult.push(
-                `attr.command.filter.${detailedFilter} = ${percentageOnTotalRecords(
-                  value
-                )}%`
-              );
+              if (detailedFilter) {
+                formattedResult.push(
+                  `attr.command.filter.${detailedFilter} = ${percentage}%`
+                );
+              }
             }
           }
         }
@@ -91,7 +100,7 @@ const resultsTotal = async (msgNsPercentages) => {
   }
 };
 
-// Hàm để duyệt qua tất cả các trường và phần tử của $and, $or
+// Hàm để duyệt qua tất cả các trường và phần tử của $and, $or và hiển thị toàn bộ
 const formatFilterField = (key, value) => {
   if (value === undefined || value === null) {
     return null; // Bỏ qua nếu giá trị không hợp lệ
@@ -100,7 +109,6 @@ const formatFilterField = (key, value) => {
   if (typeof value === "object" && value !== null) {
     // Kiểm tra và xử lý các điều kiện $and và $or
     if (value.$and) {
-      // Duyệt qua từng điều kiện trong $and và xử lý đệ quy
       return `$and: [${value.$and
         .map((condition) =>
           formatFilterField(
@@ -110,7 +118,6 @@ const formatFilterField = (key, value) => {
         )
         .join(", ")}]`;
     } else if (value.$or) {
-      // Duyệt qua từng điều kiện trong $or và xử lý đệ quy
       return `$or: [${value.$or
         .map((condition) =>
           formatFilterField(
@@ -128,6 +135,7 @@ const formatFilterField = (key, value) => {
     return `${key}: ${value}`;
   }
 };
+
 const resultsQuery = async (req) => {
   try {
     const { ns, msg } = req.query;
