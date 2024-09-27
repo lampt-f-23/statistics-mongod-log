@@ -44,47 +44,40 @@ const finData = async (req) => {
 };
 const resultsTotal = async (msgNsPercentages) => {
   try {
-    // Lấy tổng số bản ghi từ MongoDB
     const totalRecords = await mongod_log.mongodLogModel.countDocuments();
-
-    // Tạo object để lưu kết quả tổng hợp cho mỗi msg và ns
     const totalResult = {};
 
-    // Duyệt qua tất cả các ns trong msgNsPercentages
     for (const ns in msgNsPercentages.nsPercentages) {
-      const nsPercentage = msgNsPercentages.nsPercentages[ns];
       totalResult[ns] = {};
 
-      // Duyệt qua tất cả các msg liên quan đến ns hiện tại
       for (const msg in msgNsPercentages.msgPercentages) {
-        const msgPercentage = msgNsPercentages.msgPercentages[msg];
-
-        // Tạo pipeline để xử lý với MongoDB
-        const pipeline = await createPipelineResultsTotal(msg, ns);
+        const pipeline = createPipelineResultsTotal(msg, ns);
         const results = await mongod_log.mongodLogModel.aggregate(pipeline);
 
         const response =
           results.length > 0
             ? results[0]
             : { totalRecords: 0, filterFields: {} };
+        const formattedResult = [];
 
         const percentageOnTotalRecords = (count) =>
           ((count / totalRecords) * 100).toFixed(6);
 
-        const formattedResult = [];
+        // Xử lý tất cả các trường trong filter, bao gồm cả $and và $or
+        for (const [key, value] of Object.entries(response.filterFields)) {
+          if (value !== undefined && value !== null) {
+            const detailedFilter = formatFilterField(key, value);
 
-        // Xử lý động tất cả các trường filter
-        for (const [field, count] of Object.entries(response.filterFields)) {
-          if (count > 0) {
-            formattedResult.push(
-              `attr.command.filter.${field} = ${percentageOnTotalRecords(
-                count
-              )}%`
-            );
+            if (detailedFilter) {
+              formattedResult.push(
+                `attr.command.filter.${detailedFilter} = ${percentageOnTotalRecords(
+                  value
+                )}%`
+              );
+            }
           }
         }
 
-        // Nếu có kết quả, thêm vào totalResult
         if (formattedResult.length > 0) {
           totalResult[ns][msg] = formattedResult;
         }
@@ -95,6 +88,44 @@ const resultsTotal = async (msgNsPercentages) => {
   } catch (error) {
     console.error("Error in resultsTotal:", error);
     return { status: false, error: error.message };
+  }
+};
+
+// Hàm để duyệt qua tất cả các trường và phần tử của $and, $or
+const formatFilterField = (key, value) => {
+  if (value === undefined || value === null) {
+    return null; // Bỏ qua nếu giá trị không hợp lệ
+  }
+
+  if (typeof value === "object" && value !== null) {
+    // Kiểm tra và xử lý các điều kiện $and và $or
+    if (value.$and) {
+      // Duyệt qua từng điều kiện trong $and và xử lý đệ quy
+      return `$and: [${value.$and
+        .map((condition) =>
+          formatFilterField(
+            Object.keys(condition)[0],
+            condition[Object.keys(condition)[0]]
+          )
+        )
+        .join(", ")}]`;
+    } else if (value.$or) {
+      // Duyệt qua từng điều kiện trong $or và xử lý đệ quy
+      return `$or: [${value.$or
+        .map((condition) =>
+          formatFilterField(
+            Object.keys(condition)[0],
+            condition[Object.keys(condition)[0]]
+          )
+        )
+        .join(", ")}]`;
+    } else {
+      // Nếu là một trường thông thường
+      return `${key}: ${JSON.stringify(value)}`;
+    }
+  } else {
+    // Nếu giá trị là đơn giản (string, number, v.v.)
+    return `${key}: ${value}`;
   }
 };
 const resultsQuery = async (req) => {
