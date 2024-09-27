@@ -6,7 +6,7 @@ const {
   createPipelineResults,
 } = require("./mognod_log.pipeline");
 
-const find_data = async (req) => {
+const finData = async (req) => {
   try {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
@@ -22,6 +22,53 @@ const find_data = async (req) => {
       ...(msg && { msg: msg }),
     };
 
+    // Lấy dữ liệu theo filter
+    const data = await mongod_log.mongodLogModel
+      .find(filter, "_id")
+      .skip(skip)
+      .limit(limit)
+      .exec();
+
+    if (data.length > 0) {
+      return {
+        status: true,
+        data: data || [],
+      };
+    }
+    return { message: "No data found" };
+  } catch (error) {
+    console.error("Error in finData:", error);
+    return { status: false, error: error.message };
+  }
+};
+const results = async (req) => {
+  try {
+    const { commandTypes, ns, s, c, ctx, msg } = req.query;
+
+    const results = await mongod_log.mongodLogModel.aggregate(
+      createPipelineResults(msg, ns)
+    );
+
+    const response =
+      results.length > 0
+        ? results[0]
+        : { totalCodes: 0, totalRecords: 0, percentage: 0 };
+
+    return {
+      msg: `kết quả của ${msg} từ ${ns} là : tổng: ${
+        response.totalRecords
+      } có code: ${response.totalCodes} chiến: ${response.percentage.toFixed(
+        2
+      )}%`,
+      results_response: response,
+    };
+  } catch (error) {
+    console.error("Error in finData:", error);
+    return { status: false, error: error.message };
+  }
+};
+const msgNsPercentages = async (req) => {
+  try {
     // lấy tổng số bản ghi
     const totalRecords = await mongod_log.mongodLogModel.countDocuments();
     //  lấy dữ liệu msg ns theo pipeline
@@ -34,7 +81,6 @@ const find_data = async (req) => {
         .exec(),
     ]);
 
-    // format kết quả thành định dạng { "a = 80.3% , codes: 123", "b = 19.7% , codes: 0" }
     const nsPercentages = nsCounts.reduce((acc, item) => {
       const percentage = item.percentage.toFixed(2);
       let codeInfo = "";
@@ -48,19 +94,22 @@ const find_data = async (req) => {
       return acc;
     }, {});
 
-    // format kết quả thành định dạng { "a = 80.3%", "b = 19.7%" }
     const msgPercentages = msgCounts.reduce((acc, item) => {
       acc[`${item.msg}`] = `${item.percentage.toFixed(2)}%`;
       return acc;
     }, {});
 
-    // Lấy dữ liệu theo filter
-    const data = await mongod_log.mongodLogModel
-      .find(filter, "_id")
-      .skip(skip)
-      .limit(limit)
-      .exec();
-
+    return {
+      msgPercentages,
+      nsPercentages,
+    };
+  } catch (error) {
+    console.error("Error in finData:", error);
+    return { status: false, error: error.message };
+  }
+};
+const statistics = async (req) => {
+  try {
     // Lấy thông tin về các loại lệnh và collection duy nhất
     const uniqueInfo = await mongod_log.mongodLogModel
       .aggregate(createPipelineStatistics())
@@ -71,40 +120,21 @@ const find_data = async (req) => {
       "attr.type": req.query.commandTypes || 0,
     });
 
-    const results = await mongod_log.mongodLogModel.aggregate(
-      createPipelineResults(msg, ns)
-    );
-    // Kết quả
-    const response =
-      results.length > 0
-        ? results[0]
-        : { totalCodes: 0, totalRecords: 0, percentage: 0 };
-
-    if (uniqueInfo.length > 0) {
-      return {
-        status: true,
-        results: `kết quả của ${msg} từ ${ns} là : tổng: ${
-          response.totalRecords
-        } có code: ${response.totalCodes} chiến: ${response.percentage.toFixed(
-          2
-        )}%`,
-
-        msgPercentages,
-        nsPercentages,
-        statistics: {
-          ...uniqueInfo[0],
-          commanTypes,
-        },
-        data: data || [],
-      };
-    }
-    return { status: false, message: "No data found" };
+    return {
+      statistics: {
+        ...uniqueInfo[0],
+        commanTypes,
+      },
+    };
   } catch (error) {
-    console.error("Error in find_data:", error);
+    console.error("Error in finData:", error);
     return { status: false, error: error.message };
   }
 };
 
 module.exports = {
-  find_data,
+  finData,
+  results,
+  msgNsPercentages,
+  statistics,
 };
