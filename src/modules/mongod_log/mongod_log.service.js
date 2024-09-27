@@ -70,14 +70,6 @@ const resultsTotal = async (msgNsPercentages) => {
           for (const [key, value] of Object.entries(response.filterFields)) {
             if (value !== undefined && value !== null) {
               const detailedFilter = formatFilterField(key, value);
-              console.log(
-                "🚀 ~ resultsTotal ~ response.filterFields:",
-                response.filterFields
-              );
-              console.log(
-                "🚀 ~ resultsTotal ~ detailedFilter:",
-                detailedFilter
-              );
 
               if (detailedFilter) {
                 // Định dạng mới theo yêu cầu
