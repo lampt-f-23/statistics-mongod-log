@@ -57,9 +57,9 @@ const results = async (req) => {
     return {
       msg: `kết quả của ${msg} từ ${ns} là : tổng: ${
         response.totalRecords
-      } có code: ${response.totalCodes} chiến: ${response.percentage.toFixed(
-        2
-      )}%`,
+      } có filter.code: ${
+        response.totalCodes
+      } chiến: ${response.percentage.toFixed(2)}%`,
       results_response: response,
     };
   } catch (error) {
