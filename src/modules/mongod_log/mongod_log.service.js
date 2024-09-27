@@ -48,19 +48,28 @@ const results = async (req) => {
     const results = await mongod_log.mongodLogModel.aggregate(
       createPipelineResults(msg, ns)
     );
+    const count = await mongod_log.mongodLogModel.countDocuments();
 
     const response =
       results.length > 0
         ? results[0]
         : { totalCodes: 0, totalRecords: 0, percentage: 0 };
 
+    const percentageOnTotalRecords = (response.totalCodes / count) * 100;
+
     return {
-      msg: `kết quả của ${msg} từ ${ns} là : tổng: ${
-        response.totalRecords
-      } có filter.code: ${
+      msg: `kết quả của ${msg} từ ${ns} có filter.code là : ${
         response.totalCodes
-      } chiến: ${response.percentage.toFixed(2)}%`,
-      results_response: response,
+      } chiến: ${percentageOnTotalRecords.toFixed(
+        2
+      )}% trong tổng số ${count} bản ghi`,
+      // results_response: response,
+      percentageOnTotalRecords: {
+        formattedTotalRecords_vi: `${percentageOnTotalRecords.toFixed(2)} %`,
+        totalRecordsPercentage: percentageOnTotalRecords,
+        totalCodes: response.totalCodes,
+        totalRecords: count,
+      },
     };
   } catch (error) {
     console.error("Error in finData:", error);
