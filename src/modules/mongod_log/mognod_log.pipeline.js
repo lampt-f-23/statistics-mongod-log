@@ -148,10 +148,58 @@ const createPipelineResults = (msg, ns) => {
     return [];
   }
 };
+const createPipelineResultsTotal = (msg, ns) => {
+  try {
+    return [
+      {
+        $match: {
+          msg: msg,
+          "attr.ns": ns,
+        },
+      },
+      {
+        $project: {
+          _id: 1,
+          code: { $ifNull: ["$attr.command.filter.code", null] }, // Lấy code từ filter, nếu không có thì trả về null
+          name: { $ifNull: ["$attr.command.filter.name", null] }, // Lấy name từ filter, nếu không có thì trả về null
+        },
+      },
+      {
+        $group: {
+          _id: null, // Nhóm tất cả các kết quả
+          totalCodes: { $sum: { $cond: [{ $ne: ["$code", null] }, 1, 0] } }, // Đếm số lượng code không null
+          totalNames: { $sum: { $cond: [{ $ne: ["$name", null] }, 1, 0] } }, // Đếm số lượng name không null
+          totalRecords: { $sum: 1 }, // Đếm tổng số bản ghi
+        },
+      },
+      {
+        $project: {
+          _id: 0,
+          totalCodes: 1,
+          totalNames: 1,
+          totalRecords: 1,
+          percentage: {
+            $cond: {
+              if: { $gt: ["$totalRecords", 0] }, // Kiểm tra nếu tổng số bản ghi lớn hơn 0
+              then: {
+                $multiply: [{ $divide: ["$totalCodes", "$totalRecords"] }, 100],
+              }, // Tính tỷ lệ phần trăm cho code
+              else: 0, // Nếu không, tỷ lệ là 0
+            },
+          },
+        },
+      },
+    ];
+  } catch (error) {
+    console.log("error.createPipelineStatistics", error.message);
+    return [];
+  }
+};
 
 module.exports = {
   createPipelineNsCounts,
   createPipelineMsgCounts,
   createPipelineStatistics,
   createPipelineResults,
+  createPipelineResultsTotal,
 };

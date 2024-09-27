@@ -2,16 +2,20 @@ const service = require("./mongod_log.service");
 
 const get_data = async (req, res, next) => {
   try {
-    const [data, results, msgNsPercentages, statistics] = await Promise.all([
-      service.finData(req),
-      service.results(req),
-      service.msgNsPercentages(req),
-      service.statistics(req),
-    ]);
+    const [data, resultsQuery, msgNsPercentages, statistics] =
+      await Promise.all([
+        service.finData(req),
+        service.resultsQuery(req),
+        service.msgNsPercentages(req),
+        service.statistics(req),
+      ]);
 
     if (msgNsPercentages) {
+      const resultsTotal = await service.resultsTotal(msgNsPercentages);
+
       return res.json({
-        results,
+        resultsTotal: resultsTotal || [],
+        resultsQuery: resultsQuery || {},
         percentages: msgNsPercentages,
         statistics,
         data: data,

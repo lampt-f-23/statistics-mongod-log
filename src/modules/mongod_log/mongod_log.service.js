@@ -4,6 +4,7 @@ const {
   createPipelineNsCounts,
   createPipelineStatistics,
   createPipelineResults,
+  createPipelineResultsTotal,
 } = require("./mognod_log.pipeline");
 
 const finData = async (req) => {
@@ -41,9 +42,57 @@ const finData = async (req) => {
     return { status: false, error: error.message };
   }
 };
-const results = async (req) => {
+const resultsTotal = async (msgNsPercentages) => {
   try {
-    const { commandTypes, ns, s, c, ctx, msg } = req.query;
+    // Lấy tổng số bản ghi từ MongoDB
+    const totalRecords = await mongod_log.mongodLogModel.countDocuments();
+
+    // Tạo object để lưu kết quả tổng hợp cho mỗi msg và ns
+    const totalResult = {};
+
+    // Duyệt qua tất cả các ns trong msgNsPercentages
+    for (const ns in msgNsPercentages.nsPercentages) {
+      const nsPercentage = msgNsPercentages.nsPercentages[ns];
+      totalResult[ns] = {};
+
+      // Duyệt qua tất cả các msg liên quan đến ns hiện tại
+      for (const msg in msgNsPercentages.msgPercentages) {
+        const msgPercentage = msgNsPercentages.msgPercentages[msg];
+
+        // Tạo pipeline để xử lý với MongoDB
+        const pipeline = createPipelineResultsTotal(msg, ns);
+        const results = await mongod_log.mongodLogModel.aggregate(pipeline);
+
+        const response =
+          results.length > 0
+            ? results[0]
+            : { totalCodes: 0, totalRecords: 0, percentage: 0 };
+
+        const percentageOnTotalRecords =
+          (response.totalCodes / totalRecords) * 100;
+
+        // Format kết quả cho từng ns và msg
+        const formattedResult = `${ns} - attr.command.filter.code = ${percentageOnTotalRecords.toFixed(
+          2
+        )}%`;
+
+        // Lưu kết quả vào object
+        if (!totalResult[ns][msg]) {
+          totalResult[ns][msg] = [];
+        }
+        totalResult[ns][msg].push(formattedResult);
+      }
+    }
+
+    return totalResult;
+  } catch (error) {
+    console.error("Error in finData:", error);
+    return { status: false, error: error.message };
+  }
+};
+const resultsQuery = async (req) => {
+  try {
+    const { ns, msg } = req.query;
 
     const results = await mongod_log.mongodLogModel.aggregate(
       createPipelineResults(msg, ns)
@@ -143,7 +192,8 @@ const statistics = async (req) => {
 
 module.exports = {
   finData,
-  results,
+  resultsTotal,
+  resultsQuery,
   msgNsPercentages,
   statistics,
 };
