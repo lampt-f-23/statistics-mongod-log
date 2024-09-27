@@ -60,33 +60,40 @@ const resultsTotal = async (msgNsPercentages) => {
         const msgPercentage = msgNsPercentages.msgPercentages[msg];
 
         // Tạo pipeline để xử lý với MongoDB
-        const pipeline = createPipelineResultsTotal(msg, ns);
+        const pipeline = await createPipelineResultsTotal(msg, ns);
         const results = await mongod_log.mongodLogModel.aggregate(pipeline);
 
         const response =
           results.length > 0
             ? results[0]
-            : { totalCodes: 0, totalRecords: 0, percentage: 0 };
+            : { totalRecords: 0, filterFields: {} };
 
-        const percentageOnTotalRecords =
-          (response.totalCodes / totalRecords) * 100;
+        const percentageOnTotalRecords = (count) =>
+          ((count / totalRecords) * 100).toFixed(6);
 
-        // Format kết quả cho từng ns và msg
-        const formattedResult = `${ns} - attr.command.filter.code = ${percentageOnTotalRecords.toFixed(
-          2
-        )}%`;
+        const formattedResult = [];
 
-        // Lưu kết quả vào object
-        if (!totalResult[ns][msg]) {
-          totalResult[ns][msg] = [];
+        // Xử lý động tất cả các trường filter
+        for (const [field, count] of Object.entries(response.filterFields)) {
+          if (count > 0) {
+            formattedResult.push(
+              `attr.command.filter.${field} = ${percentageOnTotalRecords(
+                count
+              )}%`
+            );
+          }
         }
-        totalResult[ns][msg].push(formattedResult);
+
+        // Nếu có kết quả, thêm vào totalResult
+        if (formattedResult.length > 0) {
+          totalResult[ns][msg] = formattedResult;
+        }
       }
     }
 
     return totalResult;
   } catch (error) {
-    console.error("Error in finData:", error);
+    console.error("Error in resultsTotal:", error);
     return { status: false, error: error.message };
   }
 };

@@ -1,3 +1,5 @@
+const mongod_log = require("./mongod_log.model");
+
 const createPipelineNsCounts = (totalRecords) => {
   try {
     return [
@@ -160,33 +162,51 @@ const createPipelineResultsTotal = (msg, ns) => {
       {
         $project: {
           _id: 1,
-          code: { $ifNull: ["$attr.command.filter.code", null] }, // Lấy code từ filter, nếu không có thì trả về null
-          name: { $ifNull: ["$attr.command.filter.name", null] }, // Lấy name từ filter, nếu không có thì trả về null
+          filter: "$attr.command.filter",
         },
       },
       {
         $group: {
-          _id: null, // Nhóm tất cả các kết quả
-          totalCodes: { $sum: { $cond: [{ $ne: ["$code", null] }, 1, 0] } }, // Đếm số lượng code không null
-          totalNames: { $sum: { $cond: [{ $ne: ["$name", null] }, 1, 0] } }, // Đếm số lượng name không null
-          totalRecords: { $sum: 1 }, // Đếm tổng số bản ghi
+          _id: null,
+          totalRecords: { $sum: 1 },
+          filterFields: {
+            $push: {
+              $objectToArray: {
+                $ifNull: ["$filter", {}],
+              },
+            },
+          },
+        },
+      },
+      {
+        $unwind: "$filterFields",
+      },
+      {
+        $unwind: "$filterFields",
+      },
+      {
+        $group: {
+          _id: "$filterFields.k",
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $group: {
+          _id: null,
+          totalRecords: { $first: "$totalRecords" },
+          filterFields: {
+            $push: {
+              k: "$_id",
+              v: "$count",
+            },
+          },
         },
       },
       {
         $project: {
           _id: 0,
-          totalCodes: 1,
-          totalNames: 1,
           totalRecords: 1,
-          percentage: {
-            $cond: {
-              if: { $gt: ["$totalRecords", 0] }, // Kiểm tra nếu tổng số bản ghi lớn hơn 0
-              then: {
-                $multiply: [{ $divide: ["$totalCodes", "$totalRecords"] }, 100],
-              }, // Tính tỷ lệ phần trăm cho code
-              else: 0, // Nếu không, tỷ lệ là 0
-            },
-          },
+          filterFields: { $arrayToObject: "$filterFields" },
         },
       },
     ];
