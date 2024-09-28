@@ -42,39 +42,55 @@ const finData = async (req) => {
     return { status: false, error: error.message };
   }
 };
+/**
+ * Hàm tính toán tổng số lượng bản ghi và phần trăm từ các điều kiện lọc trong log.
+ *
+ * @param {Object} msgNsPercentages - Đối tượng chứa các tỉ lệ phần trăm theo message và namespace.
+ * @returns {Object} - Đối tượng chứa kết quả tổng hợp với thông tin về số lượng và phần trăm của các trường lọc.
+ */
 const resultsTotal = async (msgNsPercentages) => {
   try {
+    // Đếm tổng số bản ghi trong bộ sưu tập mongodLog
     const totalRecords = await mongod_log.mongodLogModel.countDocuments();
-    const totalResult = {};
+    const totalResult = {}; // Đối tượng để lưu trữ kết quả tổng hợp
 
+    // Duyệt qua từng namespace trong msgNsPercentages
     for (const ns in msgNsPercentages.nsPercentages) {
-      totalResult[ns] = {};
+      totalResult[ns] = {}; // Khởi tạo đối tượng cho từng namespace
 
+      // Duyệt qua từng message trong msgPercentages
       for (const msg in msgNsPercentages.msgPercentages) {
+        // Tạo pipeline cho việc truy vấn
         const pipeline = createPipelineResultsTotal(msg, ns);
+        // Thực hiện truy vấn aggregate theo pipeline
         const results = await mongod_log.mongodLogModel.aggregate(pipeline);
+        console.log("🚀 ~ resultsTotal ~ results:", results)
+        // Lấy kết quả đầu tiên nếu có, nếu không thì khởi tạo giá trị mặc định
         const response =
           results.length > 0
             ? results[0]
             : { totalRecords: 0, filterFields: {} };
-        const formattedResult = [];
+        const formattedResult = []; // Mảng để lưu trữ kết quả đã định dạng
 
+        // Hàm để tính phần trăm trên tổng số bản ghi
         const percentageOnTotalRecords = (count) =>
           ((count / totalRecords) * 100).toFixed(6);
 
-        // Kiểm tra nếu filterFields tồn tại trước khi xử lý
+        // Kiểm tra nếu filterFields tồn tại và là một đối tượng
         if (
           response.filterFields &&
           typeof response.filterFields === "object"
         ) {
+          // Duyệt qua từng trường trong filterFields
           for (const [key, value] of Object.entries(response.filterFields)) {
             if (value !== undefined && value !== null) {
+              // Định dạng chi tiết cho trường lọc
               const detailedFilter = formatFilterField(key, value);
 
               if (detailedFilter) {
-                // Định dạng mới theo yêu cầu
+                // Định dạng kết quả theo yêu cầu
                 formattedResult.push({
-                  attr: `${key} : ${percentageOnTotalRecords(value.count)}%`,
+                  attr: `${key} : ${percentageOnTotalRecords(value.count)}%`, // Tạo chuỗi hiển thị phần trăm
                   value, // Dữ liệu trong $or hoặc $and
                 });
               }
@@ -82,14 +98,17 @@ const resultsTotal = async (msgNsPercentages) => {
           }
         }
 
+        // Nếu có kết quả đã định dạng, lưu vào totalResult
         if (formattedResult.length > 0) {
           totalResult[ns][msg] = formattedResult;
         }
       }
     }
 
+    // Trả về kết quả tổng hợp
     return totalResult;
   } catch (error) {
+    // Xử lý lỗi và trả về thông báo lỗi
     console.error("Error in resultsTotal:", error);
     return { status: false, error: error.message };
   }

@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const { connectToDatabase } = require("./src/modules/config/db");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9411;
 
 connectToDatabase();
 app.use(morgan("dev"));
