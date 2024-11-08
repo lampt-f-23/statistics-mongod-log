@@ -5,7 +5,7 @@ const mongodLogShema = new db.mongoose.Schema(
     name: { type: String },
   },
   {
-    collection: "mongod_log",
+    collection: "mongo_logs",
   }
 );
 let mongodLogModel = db.mongoose.model("mongod_log_model", mongodLogShema);

@@ -51,7 +51,10 @@ const finData = async (req) => {
 const resultsTotal = async (msgNsPercentages) => {
   try {
     // Đếm tổng số bản ghi trong bộ sưu tập mongodLog
-    const totalRecords = await mongod_log.mongodLogModel.countDocuments();
+    const totalRecords = await mongod_log.mongodLogModel.countDocuments({
+      msg: "Slow query",
+    });
+    console.log("🚀 ~ resultsTotal ~ totalRecords:", totalRecords);
     const totalResult = {}; // Đối tượng để lưu trữ kết quả tổng hợp
 
     // Duyệt qua từng namespace trong msgNsPercentages
@@ -59,50 +62,45 @@ const resultsTotal = async (msgNsPercentages) => {
       totalResult[ns] = {}; // Khởi tạo đối tượng cho từng namespace
 
       // Duyệt qua từng message trong msgPercentages
-      for (const msg in msgNsPercentages.msgPercentages) {
-        // Tạo pipeline cho việc truy vấn
-        const pipeline = createPipelineResultsTotal(msg, ns);
-        // Thực hiện truy vấn aggregate theo pipeline
-        const results = await mongod_log.mongodLogModel.aggregate(pipeline);
-        console.log("🚀 ~ resultsTotal ~ results:", results)
-        // Lấy kết quả đầu tiên nếu có, nếu không thì khởi tạo giá trị mặc định
-        const response =
-          results.length > 0
-            ? results[0]
-            : { totalRecords: 0, filterFields: {} };
-        const formattedResult = []; // Mảng để lưu trữ kết quả đã định dạng
+      // for (const msg in msgNsPercentages.msgPercentages) {
+      // Tạo pipeline cho việc truy vấn
+      const pipeline = createPipelineResultsTotal("Slow query", ns);
+      // Thực hiện truy vấn aggregate theo pipeline
+      const results = await mongod_log.mongodLogModel.aggregate(pipeline);
+      console.log("🚀 ~ resultsTotal ~ results:", JSON.stringify(results));
+      // Lấy kết quả đầu tiên nếu có, nếu không thì khởi tạo giá trị mặc định
+      const response =
+        results.length > 0 ? results[0] : { totalRecords: 0, filterFields: {} };
+      const formattedResult = []; // Mảng để lưu trữ kết quả đã định dạng
 
-        // Hàm để tính phần trăm trên tổng số bản ghi
-        const percentageOnTotalRecords = (count) =>
-          ((count / totalRecords) * 100).toFixed(6);
+      // Hàm để tính phần trăm trên tổng số bản ghi
+      const percentageOnTotalRecords = (count) =>
+        ((count / totalRecords) * 100).toFixed(6);
 
-        // Kiểm tra nếu filterFields tồn tại và là một đối tượng
-        if (
-          response.filterFields &&
-          typeof response.filterFields === "object"
-        ) {
-          // Duyệt qua từng trường trong filterFields
-          for (const [key, value] of Object.entries(response.filterFields)) {
-            if (value !== undefined && value !== null) {
-              // Định dạng chi tiết cho trường lọc
-              const detailedFilter = formatFilterField(key, value);
+      // Kiểm tra nếu filterFields tồn tại và là một đối tượng
+      if (response.filterFields && typeof response.filterFields === "object") {
+        // Duyệt qua từng trường trong filterFields
+        for (const [key, value] of Object.entries(response.filterFields)) {
+          if (value !== undefined && value !== null) {
+            // Định dạng chi tiết cho trường lọc
+            const detailedFilter = formatFilterField(key, value);
 
-              if (detailedFilter) {
-                // Định dạng kết quả theo yêu cầu
-                formattedResult.push({
-                  attr: `${key} : ${percentageOnTotalRecords(value.count)}%`, // Tạo chuỗi hiển thị phần trăm
-                  value, // Dữ liệu trong $or hoặc $and
-                });
-              }
+            if (detailedFilter) {
+              // Định dạng kết quả theo yêu cầu
+              formattedResult.push({
+                attr: `${key} : ${percentageOnTotalRecords(value.count)}%`, // Tạo chuỗi hiển thị phần trăm
+                value, // Dữ liệu trong $or hoặc $and
+              });
             }
           }
         }
-
-        // Nếu có kết quả đã định dạng, lưu vào totalResult
-        if (formattedResult.length > 0) {
-          totalResult[ns][msg] = formattedResult;
-        }
       }
+
+      // Nếu có kết quả đã định dạng, lưu vào totalResult
+      if (formattedResult.length > 0) {
+        totalResult[ns]["Slow query"] = formattedResult;
+      }
+      // }
     }
 
     // Trả về kết quả tổng hợp
@@ -189,15 +187,78 @@ const msgNsPercentages = async (req) => {
   try {
     // lấy tổng số bản ghi
     const totalRecords = await mongod_log.mongodLogModel.countDocuments();
+    console.log("🚀 ~ msgNsPercentages ~ totalRecords:", totalRecords);
     //  lấy dữ liệu msg ns theo pipeline
-    const [msgCounts, nsCounts] = await Promise.all([
-      mongod_log.mongodLogModel
-        .aggregate(createPipelineMsgCounts(totalRecords))
-        .exec(),
-      mongod_log.mongodLogModel
-        .aggregate(createPipelineNsCounts(totalRecords))
-        .exec(),
-    ]);
+    // const [msgCounts, nsCounts] = await Promise.all([
+    //   mongod_log.mongodLogModel
+    //     .aggregate(createPipelineMsgCounts(totalRecords))
+    //     .allowDiskUse(true)
+    //     .exec(),
+    //   mongod_log.mongodLogModel
+    //     .aggregate(createPipelineNsCounts(totalRecords))
+    //     .allowDiskUse(true)
+    //     .exec(),
+    // ]);
+    console.log("🚀 ~ ok1" );
+
+    const msgCounts = await mongod_log.mongodLogModel
+      .aggregate(createPipelineMsgCounts(totalRecords))
+      .allowDiskUse(true)
+      .exec();
+    console.log("🚀 ~ ok2" );
+
+    async function getNsCountsInBatches(batchSize) {
+      let nsCounts = []; // Lưu trữ kết quả cuối cùng
+      let skip = 0; // Số bản ghi đã xử lý
+    
+      while (true) {
+        // Tạo pipeline với limit và skip để lấy từng batch
+        const pipeline = [
+          { $skip: skip },
+          { $limit: batchSize },
+          ...createPipelineNsCounts(totalRecords) // Áp dụng pipeline đã định nghĩa
+        ];
+    
+        // Thực hiện aggregation với allowDiskUse: true
+        const batchResults = await mongod_log.mongodLogModel
+          .aggregate(pipeline)
+          .allowDiskUse(true)
+          .exec();
+    
+        // Nếu không có kết quả trong batch, nghĩa là đã lấy hết dữ liệu
+        if (batchResults.length === 0) break;
+    
+        console.log(`🚀 ~ ok3. ${Date.now()}` );
+        // Kết hợp batchResults vào nsCounts
+        batchResults.forEach((batchItem) => {
+
+          const existingItem = nsCounts.find((item) => item.ns === batchItem.ns);
+          if (existingItem) {
+            // Cộng dồn các trường count và codes cho các kết quả trùng `ns`
+            existingItem.count += batchItem.count;
+            existingItem.codes.push(...batchItem.codes);
+          } else {
+            // Thêm bản ghi mới vào nsCounts nếu không có `ns` trùng
+            nsCounts.push(batchItem);
+          }
+        });
+    
+        // Tăng skip để lấy batch tiếp theo
+        skip += batchSize;
+      }
+    
+      // Xử lý phần trăm `percentage` sau khi kết thúc vòng lặp
+      nsCounts = nsCounts.map((item) => ({
+        ...item,
+        percentage: (item.count / totalRecords) * 100
+      }));
+    
+      return nsCounts;
+    }
+    
+    const nsCounts = await getNsCountsInBatches(10000);
+    
+      console.log("🚀 ~ xong" );
 
     const nsPercentages = nsCounts.reduce((acc, item) => {
       const percentage = item.percentage.toFixed(2);
