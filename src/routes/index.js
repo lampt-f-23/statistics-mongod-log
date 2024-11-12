@@ -5,6 +5,6 @@ const routeMongodLog = require("../modules/mongodLog/mongodLog.route");
 router.use("/log", routeMongodLog);
 
 const routeZimbra = require("../modules/zimbra/zimbra.route");
-router.use("/zimbra", routeZimbra);
+router.use("/auth-zimbra", routeZimbra);
 
 module.exports = router;
