@@ -1,4 +1,4 @@
-const mongod_log = require("./mongod_log.model");
+const mongod_log = require("./mongodLog.model");
 
 const createPipelineNsCounts = (totalRecords) => {
   try {

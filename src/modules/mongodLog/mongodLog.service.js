@@ -1,11 +1,11 @@
-const mongod_log = require("./mongod_log.model");
+const mongod_log = require("./mongodLog.model");
 const {
   createPipelineMsgCounts,
   createPipelineNsCounts,
   createPipelineStatistics,
   createPipelineResults,
   createPipelineResultsTotal,
-} = require("./mognod_log.pipeline");
+} = require("./mognodLog.pipeline");
 
 const finData = async (req) => {
   try {
@@ -89,7 +89,6 @@ const resultsTotal = async (msgNsPercentages) => {
             if (value !== undefined && value !== null) {
               // Định dạng chi tiết cho trường lọc
               const detailedFilter = formatFilterField(key, value);
-              console.log("🚀 ~ resultsTotal ~ value:", value)
 
               if (detailedFilter) {
                 // Định dạng kết quả theo yêu cầu

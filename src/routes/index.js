@@ -1,8 +1,10 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-const route_mongod_log = require('../modules/mongod_log/mongod_log.route');
+const routeMongodLog = require("../modules/mongodLog/mongodLog.route");
+router.use("/log", routeMongodLog);
 
-router.use('/log', route_mongod_log);
+const routeZimbra = require("../modules/zimbra/zimbra.route");
+router.use("/zimbra", routeZimbra);
 
 module.exports = router;

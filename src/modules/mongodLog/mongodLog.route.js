@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const ctl = require("./mongod_log.controller");
+const ctl = require("./mongodLog.controller");
 
 router.get("/", ctl.analyzeLogData);
 

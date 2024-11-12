@@ -1,7 +1,7 @@
 const XLSX = require("xlsx");
 const fs = require("fs");
 const path = require("path");
-const service = require("./mongod_log.service");
+const service = require("./mongodLog.service");
 
 const analyzeLogData = async (req, res, next) => {
   try {
