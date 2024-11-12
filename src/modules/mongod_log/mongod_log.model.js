@@ -1,4 +1,4 @@
-var db = require("../config/db");
+var db = require("../../config/db");
 
 const mongodLogShema = new db.mongoose.Schema(
   {

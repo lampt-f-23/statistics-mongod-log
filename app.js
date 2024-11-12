@@ -1,7 +1,7 @@
 const express = require("express");
 const routes = require("./src/routes/index");
 const morgan = require("morgan");
-const { connectToDatabase } = require("./src/modules/config/db");
+const { connectToDatabase } = require("./src/config/db");
 
 const app = express();
 const port = process.env.PORT || 9411;
