@@ -1,25 +1,65 @@
-const XLSX = require("xlsx");
-const fs = require("fs");
-const path = require("path");
 const service = require("./mongodLog.service");
+const fs = require("fs-extra");
+const path = require("path");
 
 const analyzeLogData = async (req, res, next) => {
   try {
+    // upload file mongod.log
+    // Kiểm tra xem file có được tải lên hay không
+    if (!req.file) {
+      return res
+        .status(400)
+        .json({ success: false, message: "Không có file nào được upload." });
+    }
+    console.log(`Đã upload thành công`);
+
+    // Đường dẫn file ban đầu
+    const originalFilePath = path.join(__dirname, "uploads", req.file.filename);
+    // Đổi đuôi file thành .json
+    const jsonFilePath = originalFilePath.replace(
+      path.extname(originalFilePath),
+      ".json"
+    );
+
+    // Đổi tên file
+    await fs.promises.rename(originalFilePath, jsonFilePath);
+    console.log(`Đã đổi tên file thành JSON `);
+
+    //import dữ liệu từ file mongod.log vào db
+    if (await service.importLogData(jsonFilePath)) {
+    }
+
+    // xóa file mongod.log
+    if (await service.deleteFileIfExists(jsonFilePath)) {
+      console.log(`Đã xóa file `);
+    }
+
+    console.log(`bắt đầu phân tích`);
     const [msgNsPercentages] = await Promise.all([
       service.msgNsPercentages(req),
     ]);
 
+    console.log(`bắt đầu tính toán`);
     if (msgNsPercentages) {
       const resultsTotal = await service.resultsTotal(msgNsPercentages);
 
+      console.log(`bắt đầu ghi dữ liệu vào excel`);
       // Ghi dữ liệu vào file Excel
-      writeToExcel(resultsTotal);
-
-      // Gửi response JSON như bình thường
+      const pathXlsx = service.writeToExcel(resultsTotal);
+      
+      console.log(`bắt đầu upload tạo file tải về`);
+      const linkExcell = await service.uploadFileExcell(pathXlsx);
+      
+      // xóa file excel khi được up xong
+      if (await service.deleteFileIfExists(pathXlsx)) {
+        console.log(`Đã xóa file excel sau khi upload xong`);
+      }
+      console.log("linkExcell.url:", linkExcell.url)
       return res.json({
-        msg: "excel to save",
-        resultsTotal: resultsTotal || [],
-        percentages: msgNsPercentages,
+        success: true,
+        url: linkExcell.url,
+        // resultsTotal: resultsTotal || [],
+        // percentages: msgNsPercentages,
       });
     }
 
@@ -29,83 +69,59 @@ const analyzeLogData = async (req, res, next) => {
   }
 };
 
-// Hàm tạo mô tả mới từ thông tin bảng và trường tìm kiếm
-const generateDescription = (table, field) => {
-  return `tìm kiếm '${table}' theo '${field}'`;
-};
+const testRunLog = async (req, res, next) => {
+  try {
+    var DATABASE_COLLECTION = "";
 
-const writeToExcel = (resultsTotal) => {
-  // Tạo một workbook mới
-  const wb = XLSX.utils.book_new();
-
-  // Tạo dữ liệu cho worksheet
-  const wsData = [["Bảng", "Câu truy vấn", "Tỉ lệ %", "Mô tả"]];
-
-  // Tạo một mảng tạm thời để lưu trữ dữ liệu cần sắp xếp
-  const tempData = [];
-
-  // Chuyển đổi dữ liệu từ resultsTotal vào định dạng mong muốn
-  for (const [table, queries] of Object.entries(resultsTotal)) {
-    for (const [queryType, attributes] of Object.entries(queries)) {
-      attributes.forEach((attr) => {
-        const attrParts = attr.attr.split(":");
-        const field = attrParts[0].split(".").pop().trim(); // Lấy trường tìm kiếm, ví dụ 'customerCif'
-        const percentage = parseFloat(attrParts[1].trim());
-        const formattedPercentage = percentage; // Định dạng phần trăm
-        // const formattedPercentage = formatPercentage(percentage); // Định dạng phần trăm
-
-        // Thay thế mô tả bằng chuỗi mới
-        const description = generateDescription(table, field);
-
-        // Thêm dữ liệu vào mảng tạm
-        tempData.push([
-          table,
-          queryType,
-          percentage,
-          formattedPercentage,
-          description,
-        ]);
+    // Kiểm tra trạng thái kết nối của MongoDB
+    if (service.mongod_log.db.readyState !== 1) {
+      return res.json({
+        success: false,
+        message: "Kết nối cơ sở dữ liệu chưa được thiết lập.",
       });
     }
+
+    const collectionName = service.mongod_log.collection.name;
+    if (collectionName) {
+      DATABASE_COLLECTION = collectionName;
+    }
+    // Kiểm tra xem collection `mongo_logs` có tồn tại hay không
+    const collections = await service.mongod_log.db.db
+      .listCollections()
+      .toArray();
+    const mongoLogsExists = collections.some(
+      (col) => col.name === DATABASE_COLLECTION
+    );
+
+    if (!mongoLogsExists) {
+      return res.json({
+        success: false,
+        message: `Bảng dữ liệu ${DATABASE_COLLECTION} không tồn tại.`,
+      });
+    }
+
+    // Nếu collection tồn tại, đếm số lượng bản ghi
+    const recordCount = await service.mongod_log.countDocuments();
+
+    if (recordCount === 0) {
+      return res.json({
+        success: false,
+        message: `Bảng dữ liệu ${DATABASE_COLLECTION} được kết nối và không có bản ghi log nào.`,
+      });
+    }
+    return res.json({
+      success: true,
+      message: `Bảng dữ liệu ${DATABASE_COLLECTION} được kết nối và có bản ghi, tool phân tích đã sẵn sàng, chạy ${
+        req.protocol
+      }://${req.headers.host}/api/log để lấy kết quả ${Date.now()}.`,
+      recordCount: recordCount,
+    });
+  } catch (error) {
+    return res.json({ success: false, message: error.message });
   }
-
-  // Sắp xếp theo phần trăm từ cao đến thấp
-  tempData.sort((a, b) => b[2] - a[2]);
-
-  // Đẩy dữ liệu đã sắp xếp vào wsData, bỏ cột percentage gốc (đã được định dạng)
-  tempData.forEach((row) => {
-    wsData.push([row[0], row[1], row[3], row[4]]);
-  });
-
-  // Tạo một worksheet từ dữ liệu
-  const ws = XLSX.utils.aoa_to_sheet(wsData);
-
-  // Thiết lập độ rộng cột
-  ws["!cols"] = [
-    { wch: 20 }, // Bảng
-    { wch: 15 }, // Câu truy vấn
-    { wch: 10 }, // Tỉ lệ %
-    { wch: 50 }, // Mô tả
-  ];
-
-  // Thêm worksheet vào workbook
-  XLSX.utils.book_append_sheet(wb, ws, "Data");
-
-  // Xác định đường dẫn để lưu file
-  const fileName = `data_${Date.now()}.xlsx`;
-  const filePath = path.join(__dirname, "exports", fileName);
-
-  // Đảm bảo thư mục 'exports' tồn tại
-  if (!fs.existsSync(path.join(__dirname, "exports"))) {
-    fs.mkdirSync(path.join(__dirname, "exports"));
-  }
-
-  // Ghi workbook vào file
-  XLSX.writeFile(wb, filePath);
-
-  console.log(`File Excel đã được lưu tại: ${filePath}`);
 };
 
 module.exports = {
   analyzeLogData,
+  testRunLog,
 };

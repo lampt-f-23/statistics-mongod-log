@@ -1,13 +1,18 @@
-var db = require("../../config/db");
+const mongoose = require("mongoose");
 
-const mongodLogShema = new db.mongoose.Schema(
+const mongodLogShema = new mongoose.Schema(
   {
-    name: { type: String },
+    t: { type: Date, required: true }, // Trường t chứa thời gian
+    s: { type: String, required: true }, // Trường s chứa loại thông điệp
+    c: { type: String, required: true }, // Trường c chứa loại điều khiển
+    id: { type: Number, required: true }, // Trường id chứa mã số
+    ctx: { type: String, required: true }, // Trường ctx chứa ngữ cảnh
+    msg: { type: String, required: true }, // Trường msg chứa thông điệp
+    attr: { type: Object }, // Trường attr chứa các thông tin bổ sung (nếu có)
   },
   {
     collection: "mongo_logs3",
   }
 );
-let mongodLogModel = db.mongoose.model("mongod_log_model", mongodLogShema);
 
-module.exports = { mongodLogModel };
+module.exports = mongoose.model("mongod_log_model", mongodLogShema);
