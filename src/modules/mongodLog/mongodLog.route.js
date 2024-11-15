@@ -27,7 +27,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-router.get("/", upload.single("file"), ctl.analyzeLogData);
+router.post("/", upload.single("file"), ctl.analyzeLogData);
 
 router.get("/test", ctl.testRunLog);
 

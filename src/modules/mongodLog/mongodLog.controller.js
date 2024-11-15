@@ -27,6 +27,7 @@ const analyzeLogData = async (req, res, next) => {
 
     //import dữ liệu từ file mongod.log vào db
     if (await service.importLogData(jsonFilePath)) {
+      console.log("Dữ liệu đã được nhập thành công vào DB");
     }
 
     // xóa file mongod.log
@@ -44,17 +45,17 @@ const analyzeLogData = async (req, res, next) => {
       const resultsTotal = await service.resultsTotal(msgNsPercentages);
 
       console.log(`bắt đầu ghi dữ liệu vào excel`);
-      // Ghi dữ liệu vào file Excel
-      const pathXlsx = service.writeToExcel(resultsTotal);
-      
+      const pathXlsx = await service.writeToExcel(resultsTotal);
+
       console.log(`bắt đầu upload tạo file tải về`);
       const linkExcell = await service.uploadFileExcell(pathXlsx);
-      
+
       // xóa file excel khi được up xong
       if (await service.deleteFileIfExists(pathXlsx)) {
         console.log(`Đã xóa file excel sau khi upload xong`);
       }
-      console.log("linkExcell.url:", linkExcell.url)
+      console.log("linkExcell.url:", linkExcell.url);
+
       return res.json({
         success: true,
         url: linkExcell.url,
@@ -65,6 +66,7 @@ const analyzeLogData = async (req, res, next) => {
 
     return res.json({ status: false, message: "No data found" });
   } catch (error) {
+    console.error("Error occurred:", error);
     return res.json({ success: false, message: error.message });
   }
 };
