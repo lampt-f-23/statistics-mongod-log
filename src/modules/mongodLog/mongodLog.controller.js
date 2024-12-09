@@ -6,34 +6,34 @@ const analyzeLogData = async (req, res, next) => {
   try {
     // upload file mongod.log
     // Kiểm tra xem file có được tải lên hay không
-    if (!req.file) {
-      return res
-        .status(400)
-        .json({ success: false, message: "Không có file nào được upload." });
-    }
+    // if (!req.file) {
+    //   return res
+    //     .status(400)
+    //     .json({ success: false, message: "Không có file nào được upload." });
+    // }
     console.log(`Đã upload thành công`);
 
     // Đường dẫn file ban đầu
-    const originalFilePath = path.join(__dirname, "uploads", req.file.filename);
-    // Đổi đuôi file thành .json
-    const jsonFilePath = originalFilePath.replace(
-      path.extname(originalFilePath),
-      ".json"
-    );
+    // const originalFilePath = path.join(__dirname, "uploads", req.file.filename);
+    // // Đổi đuôi file thành .json
+    // const jsonFilePath = originalFilePath.replace(
+    //   path.extname(originalFilePath),
+    //   ".json"
+    // );
 
-    // Đổi tên file
-    await fs.promises.rename(originalFilePath, jsonFilePath);
+    // // Đổi tên file
+    // await fs.promises.rename(originalFilePath, jsonFilePath);
     console.log(`Đã đổi tên file thành JSON `);
 
     //import dữ liệu từ file mongod.log vào db
-    if (await service.importLogData(jsonFilePath)) {
+    // if (await service.importLogData(jsonFilePath)) {
       console.log("Dữ liệu đã được nhập thành công vào DB");
-    }
+    // }
 
-    // xóa file mongod.log
-    if (await service.deleteFileIfExists(jsonFilePath)) {
+    // // xóa file mongod.log
+    // if (await service.deleteFileIfExists(jsonFilePath)) {
       console.log(`Đã xóa file `);
-    }
+    // }
 
     console.log(`bắt đầu phân tích`);
     const [msgNsPercentages] = await Promise.all([

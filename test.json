@@ -1,0 +1,3565 @@
+{
+    "Hạng mục":[
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "LẬP KẾ HOẠCH"
+     },
+     null,
+     null,
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "KHẢO SÁT, THU THẬP YÊU CẦU",
+      "Ngày bắt đầu": "9\/12\/2024",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 22
+     },
+     {
+      "Column2": "- Biên bản khảo sát (TTDL, Các sở ngành, Huyện\/ Thị xã) ",
+      "Ngày bắt đầu": "9\/12\/2024",
+      "Ngày kết thúc": "19\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 10
+     },
+     {
+      "Column2": "- Báo cáo khảo sát",
+      "Ngày bắt đầu": "20\/12\/2024",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 12
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "PHÂN TÍCH YÊU CẦU",
+      "Ngày bắt đầu": "2\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 26
+     },
+     {
+      "Column2": "- Tài liệu phân tích yêu cầu",
+      "Ngày bắt đầu": "2\/12\/2024",
+      "Ngày kết thúc": "12\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 10
+     },
+     {
+      "Column2": "- Lập danh sách màn hình, tính năng",
+      "Ngày bắt đầu": "13\/12\/2024",
+      "Ngày kết thúc": "25\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 11
+     },
+     {
+      "Column2": "- Xây dựng bảng phân quyền",
+      "Ngày bắt đầu": "26\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 5
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "THIẾT KẾ PHẦN MỀM",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 47
+     },
+     {
+      "Column2": "1. Xây dựng CSDL"
+     },
+     {
+      "Column3": "Tài liệu thiết kế CSDL",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "10\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 17
+     },
+     {
+      "Column2": "2. Thiết kế chức năng, giao diện",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 47
+     },
+     {
+      "Column3": "Tài liệu thiết kế giao diện",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 47
+     },
+     {
+      "Column3": "HẠNG MỤC CHỨC NĂNG"
+     },
+     {
+      "Column2": "A",
+      "Column3": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 13
+     },
+     {
+      "Column3": "Phần mềm quản lý, vận hành LGSP",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "24\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "Ngày bắt đầu": "25\/12\/2024",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 11
+     },
+     {
+      "Column2": "B",
+      "Column3": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 10
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "7\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "Ngày bắt đầu": "8\/01\/2025",
+      "Ngày kết thúc": "11\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 4
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "Ngày bắt đầu": "12\/01\/2025",
+      "Ngày kết thúc": "15\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Nhóm dịch vụ thanh toán điện tử",
+      "Ngày bắt đầu": "16\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column2": "C",
+      "Column3": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 24
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "21\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "Ngày bắt đầu": "21\/01\/2025",
+      "Ngày kết thúc": "21\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Ngày bắt đầu": "24\/01\/2025",
+      "Ngày kết thúc": "3\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 4
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Ngày bắt đầu": "4\/02\/2025",
+      "Ngày kết thúc": "5\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Ngày bắt đầu": "6\/02\/2025",
+      "Ngày kết thúc": "7\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2,
+      "Column17": "ĐG",
+      "Column18": "TB",
+      "Column19": "PT"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Ngày bắt đầu": "8\/02\/2025",
+      "Ngày kết thúc": "10\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2,
+      "Column13": "A (2 pm)",
+      "Column14": "CÁC PHẦN MỀM VẬN HÀNH",
+      "Column16": 48,
+      "Column21": 92
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Ngày bắt đầu": "11\/02\/2025",
+      "Ngày kết thúc": "13\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3,
+      "Column14": "Phần mềm quản lý, vận hành LGSP",
+      "Column17": 3,
+      "Column18": 5,
+      "Column20": 13
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1,
+      "Column14": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "Column17": 1,
+      "Column18": 39,
+      "Column20": 79
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1,
+      "Column13": "B (4 nhóm)",
+      "Column14": "CÁC DỊCH VỤ DÙNG CHUNG",
+      "Column16": 35,
+      "Column21": 67
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Ngày bắt đầu": "16\/02\/2025",
+      "Ngày kết thúc": "18\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2,
+      "Column14": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "Column18": 4,
+      "Column20": 8
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Ngày bắt đầu": "19\/02\/2025",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2,
+      "Column14": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "Column17": 3,
+      "Column18": 12,
+      "Column20": 27
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "PHÁT TRIỂN PHẦN MỀM ",
+      "Ngày bắt đầu": "27\/01\/2025",
+      "Ngày kết thúc": "9\/05\/2025",
+      "Số ngày (trừ ngày nghỉ)": 81,
+      "Column14": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "Column18": 11,
+      "Column20": 22
+     },
+     {
+      "Column2": "1. Chuẩn bị môi trường development",
+      "Column14": "Nhóm dịch vụ thanh toán điện tử",
+      "Column18": 5,
+      "Column20": 10
+     },
+     {
+      "Column2": "2. Xây dựng cấu trúc code",
+      "Column13": "C (13 nhóm)",
+      "Column14": " NHÓM CÁC DỊCH VỤ THÔNG TIN",
+      "Column16": 83,
+      "Column18": 83,
+      "Column20": 166,
+      "Column21": 166,
+      "Column22": 325
+     },
+     {
+      "Column2": "3. Phát triển tính năng",
+      "Column14": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "Column18": 9,
+      "Column20": 18
+     },
+     {
+      "Column3": "HẠNG MỤC CHỨC NĂNG",
+      "Column14": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "Column18": 2,
+      "Column20": 4
+     },
+     {
+      "Column2": "A",
+      "Column3": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "Column14": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "Column18": 3,
+      "Column20": 6
+     },
+     {
+      "Column3": "Phần mềm quản lý, vận hành LGSP",
+      "Column14": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "Column18": 5,
+      "Column20": 10
+     },
+     {
+      "Column3": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "Column14": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Column18": 14,
+      "Column20": 28
+     },
+     {
+      "Column2": "B",
+      "Column3": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "Column14": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Column18": 6,
+      "Column20": 12
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "Column14": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Column18": 6,
+      "Column20": 12
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "Column14": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Column18": 7,
+      "Column20": 14
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "Column14": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Column18": 10,
+      "Column20": 20
+     },
+     {
+      "Column3": "Nhóm dịch vụ thanh toán điện tử",
+      "Column14": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Column18": 5,
+      "Column20": 10
+     },
+     {
+      "Column2": "C",
+      "Column3": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "Column14": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Column18": 5,
+      "Column20": 10
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "Column14": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Column18": 5,
+      "Column20": 10
+     },
+     {
+      "Column3": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "Column14": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Column18": 6,
+      "Column20": 12
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp CSDLQG về dân cư"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Column13": "Ngày lễ",
+      "Column14": "Ngày"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "27-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "28-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "29-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "30-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "31-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Column13": "Ngày Giỗ Tổ Hùng Vương",
+      "Column14": "10-04-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Column13": "Ngày Lao động Quốc tế",
+      "Column14": "01-05-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Column13": "Ngày Quốc Khánh",
+      "Column14": "02-09-2025"
+     },
+     {
+      "Column2": "4. Tích hợp hệ thống",
+      "Column13": "Ngày Quốc Khánh",
+      "Column14": "03-09-2025"
+     },
+     {
+      "Column2": "5. Deploy và fix bug",
+      "Column13": "Ngày Giải phóng miền Nam",
+      "Column14": "30-04-2025"
+     },
+     {
+      "Column2": "6. Viết automated testing"
+     },
+     {
+      "Column2": "7. Tối ưu hệ thống"
+     },
+     {
+      "Column2": "8. Tài liệu hóa hệ thống"
+     },
+     null,
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "KIỂM THỬ",
+      "Ngày bắt đầu": "3\/03\/2025",
+      "Ngày kết thúc": "12\/05\/2025",
+      "Số ngày (trừ ngày nghỉ)": 58
+     },
+     {
+      "Column2": "1. Đọc, hiểu và phân tích yêu cầu",
+      "Ngày bắt đầu": "3\/03\/2025",
+      "Ngày kết thúc": "3\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column2": "2. Lập kế hoạch test",
+      "Ngày bắt đầu": "4\/03\/2025",
+      "Ngày kết thúc": "10\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 6
+     },
+     {
+      "Column2": "3. Viết testcase",
+      "Ngày bắt đầu": "11\/03\/2025",
+      "Ngày kết thúc": "12\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 28
+     },
+     {
+      "Column3": "Tài liệu kiểm thử chức năng"
+     },
+     {
+      "Column3": "HẠNG MỤC CHỨC NĂNG"
+     },
+     {
+      "Column2": "A",
+      "Column3": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "Ngày bắt đầu": "11\/03\/2025",
+      "Ngày kết thúc": "19\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 8
+     },
+     {
+      "Column3": "Phần mềm quản lý, vận hành LGSP",
+      "Ngày bắt đầu": "11\/03\/2025",
+      "Ngày kết thúc": "11\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "Ngày bắt đầu": "12\/03\/2025",
+      "Ngày kết thúc": "19\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 7
+     },
+     {
+      "Column2": "B",
+      "Column3": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "Ngày bắt đầu": "20\/03\/2025",
+      "Ngày kết thúc": "26\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 6
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "Ngày bắt đầu": "20\/03\/2025",
+      "Ngày kết thúc": "20\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "Ngày bắt đầu": "21\/03\/2025",
+      "Ngày kết thúc": "22\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "Ngày bắt đầu": "24\/03\/2025",
+      "Ngày kết thúc": "25\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ thanh toán điện tử",
+      "Ngày bắt đầu": "26\/03\/2025",
+      "Ngày kết thúc": "26\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column2": "C",
+      "Column3": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "Ngày bắt đầu": "27\/03\/2025",
+      "Ngày kết thúc": "12\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 14
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "Ngày bắt đầu": "27\/03\/2025",
+      "Ngày kết thúc": "28\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "Ngày bắt đầu": "28\/03\/2025",
+      "Ngày kết thúc": "28\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "Ngày bắt đầu": "29\/03\/2025",
+      "Ngày kết thúc": "29\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "Ngày bắt đầu": "29\/03\/2025",
+      "Ngày kết thúc": "29\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Ngày bắt đầu": "30\/03\/2025",
+      "Ngày kết thúc": "2\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Ngày bắt đầu": "3\/04\/2025",
+      "Ngày kết thúc": "3\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Ngày bắt đầu": "4\/04\/2025",
+      "Ngày kết thúc": "4\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Ngày bắt đầu": "5\/04\/2025",
+      "Ngày kết thúc": "5\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Ngày bắt đầu": "7\/04\/2025",
+      "Ngày kết thúc": "8\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Ngày bắt đầu": "8\/04\/2025",
+      "Ngày kết thúc": "8\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Ngày bắt đầu": "9\/04\/2025",
+      "Ngày kết thúc": "9\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Ngày bắt đầu": "11\/04\/2025",
+      "Ngày kết thúc": "11\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Ngày bắt đầu": "12\/04\/2025",
+      "Ngày kết thúc": "12\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column2": "4. Thực hiện manunal test trên môi trường local"
+     },
+     {
+      "Column2": "5. Thực hiện auto test trên môi trường local"
+     },
+     {
+      "Column2": "6. Thực hiện retest trên môi trường local"
+     },
+     {
+      "Column2": "7. Thực hiện manunal test trên môi trường production"
+     },
+     {
+      "Column2": "8. Thực hiện retest trên môi trường producttion"
+     },
+     {
+      "Column2": "9. Thực hiện auto test trên môi trường production"
+     },
+     {
+      "Column2": "10. Báo cáo kết quả test",
+      "Ngày bắt đầu": "12\/05\/2025",
+      "Ngày kết thúc": "12\/05\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     null,
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "TRIỂN KHAI",
+      "Ngày bắt đầu": "14\/04\/2025",
+      "Ngày kết thúc": "11\/07\/2025",
+      "Số ngày (trừ ngày nghỉ)": 75
+     },
+     {
+      "Column2": 1,
+      "Column3": "Chuẩn bị môi trường"
+     },
+     {
+      "Column2": 2,
+      "Column3": "Cài đặt, cấu hình môi trường hệ thống và chạy thử"
+     },
+     {
+      "Column2": 3,
+      "Column3": "Vận hành thử nghiệm"
+     },
+     {
+      "Column2": 4,
+      "Column3": "Golive"
+     },
+     null,
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "ĐẠO TẠO, CHUYỂN GIAO HỆ THỐNG",
+      "Ngày bắt đầu": "5\/04\/2025",
+      "Ngày kết thúc": "26\/09\/2025",
+      "Số ngày (trừ ngày nghỉ)": 145
+     },
+     {
+      "Column2": 1,
+      "Column3": "Đào tạo HDSD"
+     },
+     {
+      "Column2": 2,
+      "Column3": "Chuyển giao các bộ tài liệu, công nghệ"
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "NGHIỆM THU, BẢO TRÌ, BẢO HÀNH ",
+      "Ngày bắt đầu": "30\/05\/2025",
+      "Ngày kết thúc": "24\/12\/2025",
+      "Số ngày (trừ ngày nghỉ)": 177
+     }
+    ],
+    "Chi tiết kế hoạch UC":[
+     null,
+     {
+      "Column7": "itemCategory",
+      "Column8": "projectCategoryId"
+     },
+     {
+      "HẠNG MỤC": "code",
+      "Column3": "name",
+      "Ngày bắt đầu": "startDAte",
+      "Ngày kết thúc": "endDate",
+      "Column7": "type(task, sprint, category)",
+      "Column8": "categoryId",
+      "Column9": "sprintId",
+      "Column10": "projectId"
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "KHẢO SÁT, THU THẬP YÊU CẦU",
+      "Ngày bắt đầu": "9\/12\/2024",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 22
+     },
+     {
+      "Column2": "- Biên bản khảo sát (TTDL, Các sở ngành, Huyện\/ Thị xã) ",
+      "Ngày bắt đầu": "9\/12\/2024",
+      "Ngày kết thúc": "19\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 10
+     },
+     {
+      "Column2": "- Báo cáo khảo sát",
+      "Ngày bắt đầu": "20\/12\/2024",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 12
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "PHÂN TÍCH YÊU CẦU",
+      "Ngày bắt đầu": "2\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 26
+     },
+     {
+      "Column2": "- Tài liệu phân tích yêu cầu",
+      "Ngày bắt đầu": "2\/12\/2024",
+      "Ngày kết thúc": "12\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 10
+     },
+     {
+      "Column2": "- Lập danh sách màn hình, tính năng",
+      "Ngày bắt đầu": "13\/12\/2024",
+      "Ngày kết thúc": "25\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 11
+     },
+     {
+      "Column2": "- Xây dựng bảng phân quyền",
+      "Ngày bắt đầu": "26\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 5
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "THIẾT KẾ PHẦN MỀM",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 47
+     },
+     {
+      "Column2": "1. Xây dựng CSDL"
+     },
+     {
+      "Column3": "Tài liệu thiết kế CSDL",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "10\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 17
+     },
+     {
+      "Column2": "2. Thiết kế chức năng, giao diện",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 47
+     },
+     {
+      "Column3": "Tài liệu thiết kế giao diện",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 47
+     },
+     {
+      "Column3": "HẠNG MỤC CHỨC NĂNG"
+     },
+     {
+      "Column3": "Sprint 1: Các phần mềm vận hành",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 13,
+      "Column7": "sprint"
+     },
+     {
+      "Column2": "A",
+      "Column3": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 13,
+      "Column7": "category cha"
+     },
+     {
+      "Column2": "I",
+      "Column3": "Phần mềm quản lý, vận hành LGSP",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "26\/12\/2024",
+      "Số ngày (trừ ngày nghỉ)": 4,
+      "Column7": "category con"
+     },
+     {
+      "Column3": "Quản lý danh sách người dùng vận hành nền tảng",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "23\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Quản lý danh sách nhóm người dùng",
+      "Ngày bắt đầu": "23\/12\/2024",
+      "Ngày kết thúc": "23\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ cung cấp thông tin chung tình trạng vận hành của hệ thống đăng ký",
+      "Ngày bắt đầu": "24\/12\/2024",
+      "Ngày kết thúc": "24\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ cung cấp thông tin chung tình trạng của hệ thống đăng ký cho người sử dụng",
+      "Ngày bắt đầu": "24\/12\/2024",
+      "Ngày kết thúc": "24\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Quản lý Biểu đồ cung cấp thông tin chung tình trạng vận hành của hệ thống đăng ký theo các tiêu chí",
+      "Ngày bắt đầu": "25\/12\/2024",
+      "Ngày kết thúc": "25\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Quản lý danh sách các giao dịch qua LGSP",
+      "Ngày bắt đầu": "25\/12\/2024",
+      "Ngày kết thúc": "25\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Quản lý mức trao đổi dữ liệu của ứng dụng",
+      "Ngày bắt đầu": "26\/12\/2024",
+      "Ngày kết thúc": "26\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Theo dõi mức trao đổi dữ liệu của ứng dụng",
+      "Ngày bắt đầu": "26\/12\/2024",
+      "Ngày kết thúc": "26\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column2": "II",
+      "Column3": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "Ngày bắt đầu": "27\/12\/2024",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 9,
+      "Column7": "category con"
+     },
+     {
+      "Column2": 1,
+      "Column3": "Đồng bộ dữ liệu với CSDL danh mục quốc gia",
+      "Ngày bắt đầu": "27\/12\/2024",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 6
+     },
+     {
+      "Column3": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 1",
+      "Ngày bắt đầu": "27\/12\/2024",
+      "Ngày kết thúc": "27\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 2",
+      "Ngày bắt đầu": "27\/12\/2024",
+      "Ngày kết thúc": "27\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 3",
+      "Ngày bắt đầu": "27\/12\/2024",
+      "Ngày kết thúc": "27\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 4",
+      "Ngày bắt đầu": "27\/12\/2024",
+      "Ngày kết thúc": "27\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã bưu chính vùng, khu vực",
+      "Ngày bắt đầu": "28\/12\/2024",
+      "Ngày kết thúc": "28\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã bưu chính cấp 1 (Tỉnh)",
+      "Ngày bắt đầu": "28\/12\/2024",
+      "Ngày kết thúc": "28\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã bưu chính cấp 2 (Quận, Huyện)",
+      "Ngày bắt đầu": "28\/12\/2024",
+      "Ngày kết thúc": "28\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã bưu chính cấp 3 (Phường, Xã)",
+      "Ngày bắt đầu": "28\/12\/2024",
+      "Ngày kết thúc": "28\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã giới tính",
+      "Ngày bắt đầu": "30\/12\/2024",
+      "Ngày kết thúc": "30\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã nhóm máu",
+      "Ngày bắt đầu": "30\/12\/2024",
+      "Ngày kết thúc": "30\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã ý nghĩa nhóm máu",
+      "Ngày bắt đầu": "30\/12\/2024",
+      "Ngày kết thúc": "30\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã chức danh trong các cơ quan Đảng cộng sản Việt Nam",
+      "Ngày bắt đầu": "31\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục giáo dục, đào tạo Việt Nam Cấp 1",
+      "Ngày bắt đầu": "31\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục giáo dục, đào tạo Việt Nam Cấp 2",
+      "Ngày bắt đầu": "31\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục giáo dục, đào tạo Việt Nam Cấp 3",
+      "Ngày bắt đầu": "31\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục giáo dục, đào tạo cấp IV trình độ cao đẳng, đại học",
+      "Ngày bắt đầu": "31\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục giáo dục, đào tạo cấp IV trình độ thạc sĩ, tiến sĩ",
+      "Ngày bắt đầu": "31\/12\/2024",
+      "Ngày kết thúc": "31\/12\/2024",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục bậc lương",
+      "Ngày bắt đầu": "1\/01\/2025",
+      "Ngày kết thúc": "1\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục bảng lương",
+      "Ngày bắt đầu": "1\/01\/2025",
+      "Ngày kết thúc": "1\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục loại công chức, viên chức, nhân viên, lãnh đạo",
+      "Ngày bắt đầu": "1\/01\/2025",
+      "Ngày kết thúc": "1\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục nhóm lương",
+      "Ngày bắt đầu": "1\/01\/2025",
+      "Ngày kết thúc": "1\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã các hệ số lương",
+      "Ngày bắt đầu": "1\/01\/2025",
+      "Ngày kết thúc": "1\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục và mã mức lương tối thiểu vùng",
+      "Ngày bắt đầu": "1\/01\/2025",
+      "Ngày kết thúc": "1\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục mã thi đua khen thưởng",
+      "Ngày bắt đầu": "2\/01\/2025",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã loại văn bản theo quy định pháp luật",
+      "Ngày bắt đầu": "2\/01\/2025",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã tên các loại văn bản quy phạm pháp luật",
+      "Ngày bắt đầu": "2\/01\/2025",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã tên các loại văn bản hành chính",
+      "Ngày bắt đầu": "2\/01\/2025",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục Mã quy định độ khẩn văn bản",
+      "Ngày bắt đầu": "2\/01\/2025",
+      "Ngày kết thúc": "2\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column2": 2,
+      "Column3": "Đồng bộ, bổ sung các CSDL dùng chung từ các CSDL chuyên ngành của tỉnh",
+      "Ngày bắt đầu": "3\/01\/2025",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Danh mục các trường và trung tâm đào tạo",
+      "Ngày bắt đầu": "3\/01\/2025",
+      "Ngày kết thúc": "3\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin cơ bản về trường và trung tâm đào tạo",
+      "Ngày bắt đầu": "3\/01\/2025",
+      "Ngày kết thúc": "3\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ thống kê trường và trung tâm đào tạo",
+      "Ngày bắt đầu": "3\/01\/2025",
+      "Ngày kết thúc": "3\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục học sinh",
+      "Ngày bắt đầu": "3\/01\/2025",
+      "Ngày kết thúc": "3\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin cơ bản học sinh",
+      "Ngày bắt đầu": "4\/01\/2025",
+      "Ngày kết thúc": "4\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ thống kê học sinh theo các tiêu chí",
+      "Ngày bắt đầu": "4\/01\/2025",
+      "Ngày kết thúc": "4\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục giáo viên",
+      "Ngày bắt đầu": "4\/01\/2025",
+      "Ngày kết thúc": "4\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin cơ bản giáo viên",
+      "Ngày bắt đầu": "4\/01\/2025",
+      "Ngày kết thúc": "4\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ thống kê giáo viên theo các tiêu chí",
+      "Ngày bắt đầu": "6\/01\/2025",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Danh mục bệnh viện, cơ sở y tế, phòng khám tư",
+      "Ngày bắt đầu": "6\/01\/2025",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin cơ bản về bệnh viện, cơ sở y tế, phòng khám tư",
+      "Ngày bắt đầu": "6\/01\/2025",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Dịch vụ thống kê bệnh viện, cơ sở y tế, phòng khám tư theo các tiêu chí",
+      "Ngày bắt đầu": "6\/01\/2025",
+      "Ngày kết thúc": "6\/01\/2025",
+      "Column7": "task"
+     },
+     {
+      "Column3": "Sprint 2: Các dịch vụ dùng chung",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 10,
+      "Column7": "sprint"
+     },
+     {
+      "Column2": "B",
+      "Column3": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 10,
+      "Column7": "category cha"
+     },
+     {
+      "Column2": "I",
+      "Column3": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "7\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1,
+      "Column7": "category con"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin TTHC theo mã TTHC",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "7\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách TTHC",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "7\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách hồ sơ kèm theo theo TTHC",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "7\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách kết quả đầu ra của TTHC",
+      "Ngày bắt đầu": "7\/01\/2025",
+      "Ngày kết thúc": "7\/01\/2025"
+     },
+     {
+      "Column2": "II",
+      "Column3": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "Ngày bắt đầu": "8\/01\/2025",
+      "Ngày kết thúc": "11\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 4
+     },
+     {
+      "Column3": "Quản lý đơn vị liên thông",
+      "Ngày bắt đầu": "8\/01\/2025",
+      "Ngày kết thúc": "8\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách đơn vị liên thông từ LGSP",
+      "Ngày bắt đầu": "8\/01\/2025",
+      "Ngày kết thúc": "8\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thêm mới đơn vị liên thông",
+      "Ngày bắt đầu": "8\/01\/2025",
+      "Ngày kết thúc": "8\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ đơn vị liên thông",
+      "Ngày bắt đầu": "8\/01\/2025",
+      "Ngày kết thúc": "8\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ gửi văn bản liên thông qua LGSP",
+      "Ngày bắt đầu": "9\/01\/2025",
+      "Ngày kết thúc": "9\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách văn bản liên thông từ LGSP",
+      "Ngày bắt đầu": "9\/01\/2025",
+      "Ngày kết thúc": "9\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ cập nhật trạng thái nhận văn bản tới LGSP",
+      "Ngày bắt đầu": "9\/01\/2025",
+      "Ngày kết thúc": "9\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy chi tiết một văn bản liên thông từ LGSP",
+      "Ngày bắt đầu": "9\/01\/2025",
+      "Ngày kết thúc": "9\/01\/2025"
+     },
+     {
+      "Column3": "Đồng bộ văn bản nhận liên thông từ trục liên thông văn bản quốc gia về LGSP",
+      "Ngày bắt đầu": "10\/01\/2025",
+      "Ngày kết thúc": "10\/01\/2025"
+     },
+     {
+      "Column3": "Đồng bộ văn bản trạng thái nhận liên thông từ trục liên thông văn bản quốc gia về LGSP",
+      "Ngày bắt đầu": "10\/01\/2025",
+      "Ngày kết thúc": "10\/01\/2025"
+     },
+     {
+      "Column3": "Đồng bộ đơn vị liên thông từ trục liên thông văn bản quốc gia về LGSP",
+      "Ngày bắt đầu": "10\/01\/2025",
+      "Ngày kết thúc": "10\/01\/2025"
+     },
+     {
+      "Column3": "Thống kê văn bản điện tử gửi liên thông qua LGSP",
+      "Ngày bắt đầu": "11\/01\/2025",
+      "Ngày kết thúc": "11\/01\/2025"
+     },
+     {
+      "Column3": "Thống kê văn bản điện tử nhận liên thông qua LGSP",
+      "Ngày bắt đầu": "11\/01\/2025",
+      "Ngày kết thúc": "11\/01\/2025"
+     },
+     {
+      "Column3": "Thống kê văn bản trạng thái gửi liên thông qua LGSP",
+      "Ngày bắt đầu": "11\/01\/2025",
+      "Ngày kết thúc": "11\/01\/2025"
+     },
+     {
+      "Column3": "Thống kê văn bản trạng thái nhận liên thông qua LGSP",
+      "Ngày bắt đầu": "11\/01\/2025",
+      "Ngày kết thúc": "11\/01\/2025"
+     },
+     {
+      "Column2": "III",
+      "Column3": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "Ngày bắt đầu": "13\/01\/2025",
+      "Ngày kết thúc": "15\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Dịch vụ lấy chi tiết thông tin một TTHC từ CSDL Quốc gia về TTHC",
+      "Ngày bắt đầu": "13\/01\/2025",
+      "Ngày kết thúc": "13\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ danh sách TTHC từ CSDL Quốc gia về TTHC",
+      "Ngày bắt đầu": "13\/01\/2025",
+      "Ngày kết thúc": "13\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ tra cứu thông tin hồ sơ từ hệ thống một cửa",
+      "Ngày bắt đầu": "13\/01\/2025",
+      "Ngày kết thúc": "13\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ tra cứu thông tin hồ sơ trên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "13\/01\/2025",
+      "Ngày kết thúc": "13\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ số liệu xử lý hồ sơ lên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "14\/01\/2025",
+      "Ngày kết thúc": "14\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ danh sách hồ sơ của người dùng lên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "14\/01\/2025",
+      "Ngày kết thúc": "14\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ số liệu thăm dò ý kiến người dùng lên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "14\/01\/2025",
+      "Ngày kết thúc": "14\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ hồ sơ lên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "14\/01\/2025",
+      "Ngày kết thúc": "14\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ kết quả giải quyết lên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "15\/01\/2025",
+      "Ngày kết thúc": "15\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ cập nhật tiến độ xử lý hồ sơ một cửa điện tử lên Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "15\/01\/2025",
+      "Ngày kết thúc": "15\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy Giá trị TechnicalD của 1 tài khoản công dân\/doanh nghiệp qua MST\/CMND\/Căn cước\/Hộ chiếu từ Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "15\/01\/2025",
+      "Ngày kết thúc": "15\/01\/2025"
+     },
+     {
+      "Column2": "IV",
+      "Column3": "Nhóm dịch vụ thanh toán điện tử",
+      "Ngày bắt đầu": "16\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Dịch vụ khởi tạo giao dịch thanh toán với nền tảng thanh toán của Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "16\/01\/2025",
+      "Ngày kết thúc": "16\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ tra cứu lịch sử giao dịch trên nền tảng thanh toán của Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "16\/01\/2025",
+      "Ngày kết thúc": "16\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy biên lai thanh toán từ nền tảng thanh toán của Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "16\/01\/2025",
+      "Ngày kết thúc": "16\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đồng bộ thông tin tài khoản thụ hưởng từ Cổng dịch vụ công quốc gia",
+      "Ngày bắt đầu": "17\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025"
+     },
+     {
+      "Column3": "Quản lý lịch sử giao dịch",
+      "Ngày bắt đầu": "17\/01\/2025",
+      "Ngày kết thúc": "17\/01\/2025"
+     },
+     {
+      "Column3": "Sprint 3: Các dịch vụ thông tin",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 24
+     },
+     {
+      "Column2": "C",
+      "Column3": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "20\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 24
+     },
+     {
+      "Column2": "I",
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "21\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Dịch vụ lấy danh mục kỳ báo cáo",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "18\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh mục chỉ tiêu báo cáo",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "18\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách chế độ báo cáo",
+      "Ngày bắt đầu": "18\/01\/2025",
+      "Ngày kết thúc": "18\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách cấu trúc biểu mẫu báo cáo cần thực hiện theo chế độ báo cáo",
+      "Ngày bắt đầu": "20\/01\/2025",
+      "Ngày kết thúc": "20\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ gửi dữ liệu báo cáo",
+      "Ngày bắt đầu": "20\/01\/2025",
+      "Ngày kết thúc": "20\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ đính chính dữ liệu báo cáo",
+      "Ngày bắt đầu": "20\/01\/2025",
+      "Ngày kết thúc": "20\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ xóa dữ liệu báo cáo",
+      "Ngày bắt đầu": "21\/01\/2025",
+      "Ngày kết thúc": "21\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin trạng thái báo cáo",
+      "Ngày bắt đầu": "21\/01\/2025",
+      "Ngày kết thúc": "21\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ cập nhật trạng thái báo cáo",
+      "Ngày bắt đầu": "21\/01\/2025",
+      "Ngày kết thúc": "21\/01\/2025"
+     },
+     {
+      "Column2": "II",
+      "Column3": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Dịch vụ chuyển hồ sơ từ phần mềm một cửa sang phần mềm QLVB&TNDH",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ gửi kết quả giải quyết HS từ phần mềm QLVB&TNĐH sang phần mềm một cửa",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025"
+     },
+     {
+      "Column2": "III",
+      "Column3": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Dịch vụ Xác nhận số định danh cá nhân và chứng minh nhân dân",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ Xác nhận số định danh cá nhân và chứng minh nhân dân",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ Tra cứu thông tin công dân",
+      "Ngày bắt đầu": "22\/01\/2025",
+      "Ngày kết thúc": "22\/01\/2025"
+     },
+     {
+      "Column2": "IV",
+      "Column3": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Dịch vụ tiếp nhận hồ sơ một cửa",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ cập nhật kết quả trả hồ sơ",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ cập nhật trạng thái hồ sơ bổ sung",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ gửi thông báo xử lý hồ sơ",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ phản hồi hồ sơ sai kết quả",
+      "Ngày bắt đầu": "23\/01\/2025",
+      "Ngày kết thúc": "23\/01\/2025"
+     },
+     {
+      "Column2": "V",
+      "Column3": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Ngày bắt đầu": "24\/01\/2025",
+      "Ngày kết thúc": "3\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 4
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu về số liệu hiện trạng sử dụng đất",
+      "Ngày bắt đầu": "24\/01\/2025",
+      "Ngày kết thúc": "24\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê hiện trạng sử dụng đất cấp quốc gia",
+      "Ngày bắt đầu": "24\/01\/2025",
+      "Ngày kết thúc": "24\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê hiện trạng sử dụng đất cấp vùng kinh tế",
+      "Ngày bắt đầu": "24\/01\/2025",
+      "Ngày kết thúc": "24\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê hiện trạng sử dụng đất cấp quốc gia theo đối tượng sử dụng đất\/đối tượng quản lý đất",
+      "Ngày bắt đầu": "24\/01\/2025",
+      "Ngày kết thúc": "24\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh mục giai đoạn quy hoạch",
+      "Ngày bắt đầu": "25\/01\/2025",
+      "Ngày kết thúc": "25\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu về số liệu quy hoạch sử dụng đất",
+      "Ngày bắt đầu": "25\/01\/2025",
+      "Ngày kết thúc": "25\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu về công trình, dự án",
+      "Ngày bắt đầu": "25\/01\/2025",
+      "Ngày kết thúc": "25\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin chi tiết công trình, dự án theo id",
+      "Ngày bắt đầu": "25\/01\/2025",
+      "Ngày kết thúc": "25\/01\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy tất cả danh mục giai đoạn ban hành giá đất",
+      "Ngày bắt đầu": "1\/02\/2025",
+      "Ngày kết thúc": "1\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy tất cả danh mục nhóm loại đất",
+      "Ngày bắt đầu": "1\/02\/2025",
+      "Ngày kết thúc": "1\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy tất cả danh mục loại xã, đô thị",
+      "Ngày bắt đầu": "1\/02\/2025",
+      "Ngày kết thúc": "1\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy tất cả dữ liệu metadata khung giá đất",
+      "Ngày bắt đầu": "3\/02\/2025",
+      "Ngày kết thúc": "3\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy tất cả dữ liệu metadata bảng giá đất",
+      "Ngày bắt đầu": "3\/02\/2025",
+      "Ngày kết thúc": "3\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu metadata bảng giá đất theo mã tỉnh",
+      "Ngày bắt đầu": "3\/02\/2025",
+      "Ngày kết thúc": "3\/02\/2025"
+     },
+     {
+      "Column2": "VI",
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Ngày bắt đầu": "4\/02\/2025",
+      "Ngày kết thúc": "5\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách các cơ sở khám bệnh, chữa bệnh trên địa bàn",
+      "Ngày bắt đầu": "4\/02\/2025",
+      "Ngày kết thúc": "4\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin chi tiết cơ sở khám bệnh, chữa bệnh trên địa bàn theo mã cơ sở khám bệnh, chữa bệnh",
+      "Ngày bắt đầu": "4\/02\/2025",
+      "Ngày kết thúc": "4\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách y, bác sĩ hành nghề khám bệnh, chữa bệnh trên địa bàn",
+      "Ngày bắt đầu": "4\/02\/2025",
+      "Ngày kết thúc": "4\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin chi tiết y, bác sĩ hành nghề khám bệnh, chữa bệnh theo mã y, bác sĩ",
+      "Ngày bắt đầu": "5\/02\/2025",
+      "Ngày kết thúc": "5\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy thông tin chứng chỉ hành nghề của y, bác sĩ theo mã y, bác sĩ",
+      "Ngày bắt đầu": "5\/02\/2025",
+      "Ngày kết thúc": "5\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ tải file chứng chỉ hành nghề điện tử của y, bác sĩ theo mã y, bác sĩ",
+      "Ngày bắt đầu": "5\/02\/2025",
+      "Ngày kết thúc": "5\/02\/2025"
+     },
+     {
+      "Column2": "VII",
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Ngày bắt đầu": "6\/02\/2025",
+      "Ngày kết thúc": "7\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Quản lý danh sách các trường học trên địa bàn tham gia kết nối, chia sẻ học bạ điện tử",
+      "Ngày bắt đầu": "6\/02\/2025",
+      "Ngày kết thúc": "6\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách trường học trên địa bàn tham gia kết nối, chia sẻ học bạ điện tử",
+      "Ngày bắt đầu": "6\/02\/2025",
+      "Ngày kết thúc": "6\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ chuyển dữ liệu học bạ điện tử của học sinh",
+      "Ngày bắt đầu": "6\/02\/2025",
+      "Ngày kết thúc": "6\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu học bạ điện tử của học sinh theo mã số học bạ",
+      "Ngày bắt đầu": "7\/02\/2025",
+      "Ngày kết thúc": "7\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu các học bạ điện tử của học sinh theo mã số học sinh",
+      "Ngày bắt đầu": "7\/02\/2025",
+      "Ngày kết thúc": "7\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu các học bạ điện tử của học sinh theo các thông tin của học sinh",
+      "Ngày bắt đầu": "7\/02\/2025",
+      "Ngày kết thúc": "7\/02\/2025"
+     },
+     {
+      "Column2": "VIII",
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Ngày bắt đầu": "8\/02\/2025",
+      "Ngày kết thúc": "10\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Quản lý danh sách các bệnh viện trên địa bàn tham gia kết nối, chia sẻ bệnh án điện tử",
+      "Ngày bắt đầu": "8\/02\/2025",
+      "Ngày kết thúc": "8\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý danh sách mã mẫu bệnh án điện tử",
+      "Ngày bắt đầu": "8\/02\/2025",
+      "Ngày kết thúc": "8\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách bệnh viện trên địa bàn tham gia kết nối, chia sẻ bệnh án điện tử",
+      "Ngày bắt đầu": "8\/02\/2025",
+      "Ngày kết thúc": "8\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách mã mẫu bệnh án điện tử",
+      "Ngày bắt đầu": "8\/02\/2025",
+      "Ngày kết thúc": "8\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ chuyển dữ liệu bệnh án điện tử",
+      "Ngày bắt đầu": "10\/02\/2025",
+      "Ngày kết thúc": "10\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu bệnh án điện tử theo mã bệnh án",
+      "Ngày bắt đầu": "10\/02\/2025",
+      "Ngày kết thúc": "10\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy dữ liệu bệnh án điện tử theo mã người bệnh",
+      "Ngày bắt đầu": "10\/02\/2025",
+      "Ngày kết thúc": "10\/02\/2025"
+     },
+     {
+      "Column2": "IX",
+      "Column3": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Ngày bắt đầu": "11\/02\/2025",
+      "Ngày kết thúc": "13\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Dịch vụ thêm mới hồ sơ",
+      "Ngày bắt đầu": "11\/02\/2025",
+      "Ngày kết thúc": "11\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thêm mới văn bản",
+      "Ngày bắt đầu": "11\/02\/2025",
+      "Ngày kết thúc": "11\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thông tin metadata một hồ sơ",
+      "Ngày bắt đầu": "11\/02\/2025",
+      "Ngày kết thúc": "11\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thông tin metadata một văn bản",
+      "Ngày bắt đầu": "11\/02\/2025",
+      "Ngày kết thúc": "11\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy toàn bộ các văn bản của hồ sơ",
+      "Ngày bắt đầu": "12\/02\/2025",
+      "Ngày kết thúc": "12\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy một văn bản",
+      "Ngày bắt đầu": "12\/02\/2025",
+      "Ngày kết thúc": "12\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê hồ sơ",
+      "Ngày bắt đầu": "12\/02\/2025",
+      "Ngày kết thúc": "12\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê văn bản",
+      "Ngày bắt đầu": "13\/02\/2025",
+      "Ngày kết thúc": "13\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ chuyển hồ sơ sang lưu trữ lịch sử",
+      "Ngày bắt đầu": "13\/02\/2025",
+      "Ngày kết thúc": "13\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ chuyển văn bản sang lưu trữ lịch sử",
+      "Ngày bắt đầu": "13\/02\/2025",
+      "Ngày kết thúc": "13\/02\/2025"
+     },
+     {
+      "Column2": "X",
+      "Column3": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách hồ sơ đăng ký đầu tư nước ngoài theo khoảng thời gian",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy chi tiết một hồ sơ đăng ký đầu tư nước ngoài",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách TTHC đầu tư nước nước ngoài",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý TTHC đầu tư nước ngoài",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý danh sách hồ sơ TTHC đầu tư nước ngoài",
+      "Ngày bắt đầu": "14\/02\/2025",
+      "Ngày kết thúc": "14\/02\/2025"
+     },
+     {
+      "Column2": "XI",
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách hồ sơ đăng ký đầu tư nước ngoài theo khoảng thời gian",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy chi tiết một hồ sơ đăng ký đầu tư nước ngoài",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách TTHC đầu tư nước nước ngoài",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý TTHC đầu tư nước ngoài",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý danh sách hồ sơ TTHC đầu tư nước ngoài",
+      "Ngày bắt đầu": "15\/02\/2025",
+      "Ngày kết thúc": "15\/02\/2025"
+     },
+     {
+      "Column2": "XII",
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Ngày bắt đầu": "17\/02\/2025",
+      "Ngày kết thúc": "17\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách hồ sơ đăng ký cấp giấy phép lái xe",
+      "Ngày bắt đầu": "17\/02\/2025",
+      "Ngày kết thúc": "17\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy chi tiết một hồ sơ đăng ký cấp giấy phép lái xe",
+      "Ngày bắt đầu": "17\/02\/2025",
+      "Ngày kết thúc": "17\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ lấy danh sách TTHC cấp giấy phép lái xe",
+      "Ngày bắt đầu": "17\/02\/2025",
+      "Ngày kết thúc": "17\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý TTHC cấp giấy phép lái xe",
+      "Ngày bắt đầu": "17\/02\/2025",
+      "Ngày kết thúc": "17\/02\/2025"
+     },
+     {
+      "Column3": "Quản lý danh sách hồ sơ TTHC cấp giấy phép lái xe",
+      "Ngày bắt đầu": "17\/02\/2025",
+      "Ngày kết thúc": "17\/02\/2025"
+     },
+     {
+      "Column2": "XIII",
+      "Column3": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Ngày bắt đầu": "18\/02\/2025",
+      "Ngày kết thúc": "19\/02\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Dịch vụ thống kê số lượng tổ chức\/doanh nghiệp đến đăng ký tuyển dụng tại TTDVVL",
+      "Ngày bắt đầu": "18\/02\/2025",
+      "Ngày kết thúc": "18\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê số lượng người lao động đến TTDVVL tư vấn việc làm, nghề nghiệp và các chế độ chính sách",
+      "Ngày bắt đầu": "18\/02\/2025",
+      "Ngày kết thúc": "18\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê số lượng người lao động tham gia bảo hiểm thất nghiệp đến TTDVVL nhận bảo hiểm thất nghiệp",
+      "Ngày bắt đầu": "18\/02\/2025",
+      "Ngày kết thúc": "18\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê số lượng người lao động tham gia bảo hiểm thất nghiệp đến TTDVVL chấp thuận tư vấn học nghề",
+      "Ngày bắt đầu": "19\/02\/2025",
+      "Ngày kết thúc": "19\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê số lượng người lao động tham gia bảo hiểm thất nghiệp đến TTDVVL chấp thuận giới thiệu việc làm",
+      "Ngày bắt đầu": "19\/02\/2025",
+      "Ngày kết thúc": "19\/02\/2025"
+     },
+     {
+      "Column3": "Dịch vụ thống kê số lượng phiên giao dịch việc làm được tổ chức tại TTDVVL",
+      "Ngày bắt đầu": "19\/02\/2025",
+      "Ngày kết thúc": "19\/02\/2025"
+     },
+     {
+      "Column3": "Rà soát tài liệu",
+      "Ngày bắt đầu": "20\/02\/2025",
+      "Ngày kết thúc": "20\/02\/2025"
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "PHÁT TRIỂN PHẦN MỀM ",
+      "Ngày bắt đầu": "27\/01\/2025",
+      "Ngày kết thúc": "9\/05\/2025",
+      "Số ngày (trừ ngày nghỉ)": 81
+     },
+     {
+      "Column2": "1. Chuẩn bị môi trường development"
+     },
+     {
+      "Column2": "2. Xây dựng cấu trúc code"
+     },
+     {
+      "Column2": "3. Phát triển tính năng"
+     },
+     {
+      "Column3": "HẠNG MỤC CHỨC NĂNG"
+     },
+     {
+      "Column2": "A",
+      "Column3": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)"
+     },
+     {
+      "Column3": "Phần mềm quản lý, vận hành LGSP"
+     },
+     {
+      "Column3": "Phần mềm quản lý danh mục điện tử dùng chung"
+     },
+     {
+      "Column2": "B",
+      "Column3": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)"
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công"
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc"
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ"
+     },
+     {
+      "Column3": "Nhóm dịch vụ thanh toán điện tử"
+     },
+     {
+      "Column2": "C",
+      "Column3": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia"
+     },
+     {
+      "Column3": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp CSDLQG về dân cư"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Column13": "Ngày lễ",
+      "Column14": "Ngày"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "27-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "28-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "29-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "30-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Column13": "Tết Nguyên Đán (Tết Âm lịch)",
+      "Column14": "31-01-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Column13": "Ngày Giỗ Tổ Hùng Vương",
+      "Column14": "10-04-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Column13": "Ngày Lao động Quốc tế",
+      "Column14": "01-05-2025"
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Column13": "Ngày Quốc Khánh",
+      "Column14": "02-09-2025"
+     },
+     {
+      "Column2": "4. Tích hợp hệ thống",
+      "Column13": "Ngày Quốc Khánh",
+      "Column14": "03-09-2025"
+     },
+     {
+      "Column2": "5. Deploy và fix bug",
+      "Column13": "Ngày Giải phóng miền Nam",
+      "Column14": "30-04-2025"
+     },
+     {
+      "Column2": "6. Viết automated testing"
+     },
+     {
+      "Column2": "7. Tối ưu hệ thống"
+     },
+     {
+      "Column2": "8. Tài liệu hóa hệ thống"
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "KIỂM THỬ",
+      "Ngày bắt đầu": "3\/03\/2025",
+      "Ngày kết thúc": "12\/05\/2025",
+      "Số ngày (trừ ngày nghỉ)": 58
+     },
+     {
+      "Column2": "1. Đọc, hiểu và phân tích yêu cầu",
+      "Ngày bắt đầu": "3\/03\/2025",
+      "Ngày kết thúc": "3\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column2": "2. Lập kế hoạch test",
+      "Ngày bắt đầu": "4\/03\/2025",
+      "Ngày kết thúc": "10\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 6
+     },
+     {
+      "Column2": "3. Viết testcase",
+      "Ngày bắt đầu": "11\/03\/2025",
+      "Ngày kết thúc": "12\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 28
+     },
+     {
+      "Column3": "Tài liệu kiểm thử chức năng"
+     },
+     {
+      "Column3": "HẠNG MỤC CHỨC NĂNG"
+     },
+     {
+      "Column2": "A",
+      "Column3": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "Ngày bắt đầu": "11\/03\/2025",
+      "Ngày kết thúc": "19\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 8
+     },
+     {
+      "Column3": "Phần mềm quản lý, vận hành LGSP",
+      "Ngày bắt đầu": "11\/03\/2025",
+      "Ngày kết thúc": "11\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "Ngày bắt đầu": "12\/03\/2025",
+      "Ngày kết thúc": "19\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 7
+     },
+     {
+      "Column2": "B",
+      "Column3": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "Ngày bắt đầu": "20\/03\/2025",
+      "Ngày kết thúc": "26\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 6
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "Ngày bắt đầu": "20\/03\/2025",
+      "Ngày kết thúc": "20\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "Ngày bắt đầu": "21\/03\/2025",
+      "Ngày kết thúc": "22\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "Ngày bắt đầu": "24\/03\/2025",
+      "Ngày kết thúc": "25\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ thanh toán điện tử",
+      "Ngày bắt đầu": "26\/03\/2025",
+      "Ngày kết thúc": "26\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column2": "C",
+      "Column3": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "Ngày bắt đầu": "27\/03\/2025",
+      "Ngày kết thúc": "12\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 14
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "Ngày bắt đầu": "27\/03\/2025",
+      "Ngày kết thúc": "28\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "Ngày bắt đầu": "28\/03\/2025",
+      "Ngày kết thúc": "28\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "Ngày bắt đầu": "29\/03\/2025",
+      "Ngày kết thúc": "29\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "Ngày bắt đầu": "29\/03\/2025",
+      "Ngày kết thúc": "29\/03\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "Ngày bắt đầu": "30\/03\/2025",
+      "Ngày kết thúc": "2\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 3
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "Ngày bắt đầu": "3\/04\/2025",
+      "Ngày kết thúc": "3\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "Ngày bắt đầu": "4\/04\/2025",
+      "Ngày kết thúc": "4\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "Ngày bắt đầu": "5\/04\/2025",
+      "Ngày kết thúc": "5\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "Ngày bắt đầu": "7\/04\/2025",
+      "Ngày kết thúc": "8\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 2
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "Ngày bắt đầu": "8\/04\/2025",
+      "Ngày kết thúc": "8\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "Ngày bắt đầu": "9\/04\/2025",
+      "Ngày kết thúc": "9\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "Ngày bắt đầu": "11\/04\/2025",
+      "Ngày kết thúc": "11\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column3": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "Ngày bắt đầu": "12\/04\/2025",
+      "Ngày kết thúc": "12\/04\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "Column2": "4. Thực hiện manunal test trên môi trường local"
+     },
+     {
+      "Column2": "5. Thực hiện auto test trên môi trường local"
+     },
+     {
+      "Column2": "6. Thực hiện retest trên môi trường local"
+     },
+     {
+      "Column2": "7. Thực hiện manunal test trên môi trường production"
+     },
+     {
+      "Column2": "8. Thực hiện retest trên môi trường producttion"
+     },
+     {
+      "Column2": "9. Thực hiện auto test trên môi trường production"
+     },
+     {
+      "Column2": "10. Báo cáo kết quả test",
+      "Ngày bắt đầu": "12\/05\/2025",
+      "Ngày kết thúc": "12\/05\/2025",
+      "Số ngày (trừ ngày nghỉ)": 1
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "TRIỂN KHAI",
+      "Ngày bắt đầu": "14\/04\/2025",
+      "Ngày kết thúc": "11\/07\/2025",
+      "Số ngày (trừ ngày nghỉ)": 75
+     },
+     {
+      "Column2": 1,
+      "Column3": "Chuẩn bị môi trường"
+     },
+     {
+      "Column2": 2,
+      "Column3": "Cài đặt, cấu hình môi trường hệ thống và chạy thử"
+     },
+     {
+      "Column2": 3,
+      "Column3": "Vận hành thử nghiệm"
+     },
+     {
+      "Column2": 4,
+      "Column3": "Golive"
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "ĐẠO TẠO, CHUYỂN GIAO HỆ THỐNG",
+      "Ngày bắt đầu": "5\/04\/2025",
+      "Ngày kết thúc": "26\/09\/2025",
+      "Số ngày (trừ ngày nghỉ)": 145
+     },
+     {
+      "Column2": 1,
+      "Column3": "Đào tạo HDSD"
+     },
+     {
+      "Column2": 2,
+      "Column3": "Chuyển giao các bộ tài liệu, công nghệ"
+     },
+     {
+      "HẠNG MỤC": "GIAI ĐOẠN",
+      "Column2": "NGHIỆM THU, BẢO TRÌ, BẢO HÀNH ",
+      "Ngày bắt đầu": "30\/05\/2025",
+      "Ngày kết thúc": "24\/12\/2025",
+      "Số ngày (trừ ngày nghỉ)": 177
+     }
+    ],
+    "Danh sách TestCase":[
+      "Mã UC": null,
+      "Mã màn": null,
+      "Tên màn": null,
+      "Mã testcase": null,
+      "Link testcase": null
+    ],
+    "test":[
+     {
+      "name": "Sprint 1: Các phần mềm vận hành",
+      "startDate": "23\/12\/2024",
+      "endDate": "6\/01\/2025",
+      "numberDay": 13,
+      "itemCategory": "sprint"
+     },
+     {
+      "Column1": "A",
+      "name": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "startDate": "23\/12\/2024",
+      "endDate": "6\/01\/2025",
+      "numberDay": 13,
+      "itemCategory": "categoryLevel1"
+     },
+     {
+      "Column1": "I",
+      "name": "Phần mềm quản lý, vận hành LGSP",
+      "startDate": "23\/12\/2024",
+      "endDate": "26\/12\/2024",
+      "numberDay": 4,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Quản lý danh sách người dùng vận hành nền tảng",
+      "startDate": "23\/12\/2024",
+      "endDate": "23\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Quản lý danh sách nhóm người dùng",
+      "startDate": "23\/12\/2024",
+      "endDate": "23\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ cung cấp thông tin chung tình trạng vận hành của hệ thống đăng ký",
+      "startDate": "24\/12\/2024",
+      "endDate": "24\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ cung cấp thông tin chung tình trạng của hệ thống đăng ký cho người sử dụng",
+      "startDate": "24\/12\/2024",
+      "endDate": "24\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Quản lý Biểu đồ cung cấp thông tin chung tình trạng vận hành của hệ thống đăng ký theo các tiêu chí",
+      "startDate": "25\/12\/2024",
+      "endDate": "25\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Quản lý danh sách các giao dịch qua LGSP",
+      "startDate": "25\/12\/2024",
+      "endDate": "25\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Quản lý mức trao đổi dữ liệu của ứng dụng",
+      "startDate": "26\/12\/2024",
+      "endDate": "26\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Theo dõi mức trao đổi dữ liệu của ứng dụng",
+      "startDate": "26\/12\/2024",
+      "endDate": "26\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "II",
+      "name": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "startDate": "27\/12\/2024",
+      "endDate": "6\/01\/2025",
+      "numberDay": 9,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "Column1": 1,
+      "name": "Đồng bộ dữ liệu với CSDL danh mục quốc gia",
+      "startDate": "27\/12\/2024",
+      "endDate": "2\/01\/2025",
+      "numberDay": 6,
+      "itemCategory": "categoryLevel3"
+     },
+     {
+      "name": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 1",
+      "startDate": "27\/12\/2024",
+      "endDate": "27\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 2",
+      "startDate": "27\/12\/2024",
+      "endDate": "27\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 3",
+      "startDate": "27\/12\/2024",
+      "endDate": "27\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã định danh kết nối các hệ thống QLVBĐH cấp 4",
+      "startDate": "27\/12\/2024",
+      "endDate": "27\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã bưu chính vùng, khu vực",
+      "startDate": "28\/12\/2024",
+      "endDate": "28\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã bưu chính cấp 1 (Tỉnh)",
+      "startDate": "28\/12\/2024",
+      "endDate": "28\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã bưu chính cấp 2 (Quận, Huyện)",
+      "startDate": "28\/12\/2024",
+      "endDate": "28\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã bưu chính cấp 3 (Phường, Xã)",
+      "startDate": "28\/12\/2024",
+      "endDate": "28\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã giới tính",
+      "startDate": "30\/12\/2024",
+      "endDate": "30\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã nhóm máu",
+      "startDate": "30\/12\/2024",
+      "endDate": "30\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã ý nghĩa nhóm máu",
+      "startDate": "30\/12\/2024",
+      "endDate": "30\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã chức danh trong các cơ quan Đảng cộng sản Việt Nam",
+      "startDate": "31\/12\/2024",
+      "endDate": "31\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục giáo dục, đào tạo Việt Nam Cấp 1",
+      "startDate": "31\/12\/2024",
+      "endDate": "31\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục giáo dục, đào tạo Việt Nam Cấp 2",
+      "startDate": "31\/12\/2024",
+      "endDate": "31\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục giáo dục, đào tạo Việt Nam Cấp 3",
+      "startDate": "31\/12\/2024",
+      "endDate": "31\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục giáo dục, đào tạo cấp IV trình độ cao đẳng, đại học",
+      "startDate": "31\/12\/2024",
+      "endDate": "31\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục giáo dục, đào tạo cấp IV trình độ thạc sĩ, tiến sĩ",
+      "startDate": "31\/12\/2024",
+      "endDate": "31\/12\/2024",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục bậc lương",
+      "startDate": "1\/01\/2025",
+      "endDate": "1\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục bảng lương",
+      "startDate": "1\/01\/2025",
+      "endDate": "1\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục loại công chức, viên chức, nhân viên, lãnh đạo",
+      "startDate": "1\/01\/2025",
+      "endDate": "1\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục nhóm lương",
+      "startDate": "1\/01\/2025",
+      "endDate": "1\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã các hệ số lương",
+      "startDate": "1\/01\/2025",
+      "endDate": "1\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục và mã mức lương tối thiểu vùng",
+      "startDate": "1\/01\/2025",
+      "endDate": "1\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục mã thi đua khen thưởng",
+      "startDate": "2\/01\/2025",
+      "endDate": "2\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã loại văn bản theo quy định pháp luật",
+      "startDate": "2\/01\/2025",
+      "endDate": "2\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã tên các loại văn bản quy phạm pháp luật",
+      "startDate": "2\/01\/2025",
+      "endDate": "2\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã tên các loại văn bản hành chính",
+      "startDate": "2\/01\/2025",
+      "endDate": "2\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục Mã quy định độ khẩn văn bản",
+      "startDate": "2\/01\/2025",
+      "endDate": "2\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "Column1": 2,
+      "name": "Đồng bộ, bổ sung các CSDL dùng chung từ các CSDL chuyên ngành của tỉnh",
+      "startDate": "3\/01\/2025",
+      "endDate": "6\/01\/2025",
+      "numberDay": 3
+     },
+     {
+      "name": "Danh mục các trường và trung tâm đào tạo",
+      "startDate": "3\/01\/2025",
+      "endDate": "3\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin cơ bản về trường và trung tâm đào tạo",
+      "startDate": "3\/01\/2025",
+      "endDate": "3\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ thống kê trường và trung tâm đào tạo",
+      "startDate": "3\/01\/2025",
+      "endDate": "3\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục học sinh",
+      "startDate": "3\/01\/2025",
+      "endDate": "3\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin cơ bản học sinh",
+      "startDate": "4\/01\/2025",
+      "endDate": "4\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ thống kê học sinh theo các tiêu chí",
+      "startDate": "4\/01\/2025",
+      "endDate": "4\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục giáo viên",
+      "startDate": "4\/01\/2025",
+      "endDate": "4\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin cơ bản giáo viên",
+      "startDate": "4\/01\/2025",
+      "endDate": "4\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ thống kê giáo viên theo các tiêu chí",
+      "startDate": "6\/01\/2025",
+      "endDate": "6\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Danh mục bệnh viện, cơ sở y tế, phòng khám tư",
+      "startDate": "6\/01\/2025",
+      "endDate": "6\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin cơ bản về bệnh viện, cơ sở y tế, phòng khám tư",
+      "startDate": "6\/01\/2025",
+      "endDate": "6\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ thống kê bệnh viện, cơ sở y tế, phòng khám tư theo các tiêu chí",
+      "startDate": "6\/01\/2025",
+      "endDate": "6\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Sprint 2: Các dịch vụ dùng chung",
+      "startDate": "7\/01\/2025",
+      "endDate": "17\/01\/2025",
+      "numberDay": 10,
+      "itemCategory": "sprint"
+     },
+     {
+      "Column1": "B",
+      "name": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "startDate": "7\/01\/2025",
+      "endDate": "17\/01\/2025",
+      "numberDay": 10,
+      "itemCategory": "categoryLevel1"
+     },
+     {
+      "Column1": "I",
+      "name": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "startDate": "7\/01\/2025",
+      "endDate": "7\/01\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin TTHC theo mã TTHC",
+      "startDate": "7\/01\/2025",
+      "endDate": "7\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách TTHC",
+      "startDate": "7\/01\/2025",
+      "endDate": "7\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách hồ sơ kèm theo theo TTHC",
+      "startDate": "7\/01\/2025",
+      "endDate": "7\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách kết quả đầu ra của TTHC",
+      "startDate": "7\/01\/2025",
+      "endDate": "7\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "II",
+      "name": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "startDate": "8\/01\/2025",
+      "endDate": "11\/01\/2025",
+      "numberDay": 4,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Quản lý đơn vị liên thông",
+      "startDate": "8\/01\/2025",
+      "endDate": "8\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách đơn vị liên thông từ LGSP",
+      "startDate": "8\/01\/2025",
+      "endDate": "8\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ thêm mới đơn vị liên thông",
+      "startDate": "8\/01\/2025",
+      "endDate": "8\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ đơn vị liên thông",
+      "startDate": "8\/01\/2025",
+      "endDate": "8\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ gửi văn bản liên thông qua LGSP",
+      "startDate": "9\/01\/2025",
+      "endDate": "9\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách văn bản liên thông từ LGSP",
+      "startDate": "9\/01\/2025",
+      "endDate": "9\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ cập nhật trạng thái nhận văn bản tới LGSP",
+      "startDate": "9\/01\/2025",
+      "endDate": "9\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy chi tiết một văn bản liên thông từ LGSP",
+      "startDate": "9\/01\/2025",
+      "endDate": "9\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Đồng bộ văn bản nhận liên thông từ trục liên thông văn bản quốc gia về LGSP",
+      "startDate": "10\/01\/2025",
+      "endDate": "10\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Đồng bộ văn bản trạng thái nhận liên thông từ trục liên thông văn bản quốc gia về LGSP",
+      "startDate": "10\/01\/2025",
+      "endDate": "10\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Đồng bộ đơn vị liên thông từ trục liên thông văn bản quốc gia về LGSP",
+      "startDate": "10\/01\/2025",
+      "endDate": "10\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Thống kê văn bản điện tử gửi liên thông qua LGSP",
+      "startDate": "11\/01\/2025",
+      "endDate": "11\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Thống kê văn bản điện tử nhận liên thông qua LGSP",
+      "startDate": "11\/01\/2025",
+      "endDate": "11\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Thống kê văn bản trạng thái gửi liên thông qua LGSP",
+      "startDate": "11\/01\/2025",
+      "endDate": "11\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Thống kê văn bản trạng thái nhận liên thông qua LGSP",
+      "startDate": "11\/01\/2025",
+      "endDate": "11\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "III",
+      "name": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "startDate": "13\/01\/2025",
+      "endDate": "15\/01\/2025",
+      "numberDay": 3,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy chi tiết thông tin một TTHC từ CSDL Quốc gia về TTHC",
+      "startDate": "13\/01\/2025",
+      "endDate": "13\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ danh sách TTHC từ CSDL Quốc gia về TTHC",
+      "startDate": "13\/01\/2025",
+      "endDate": "13\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ tra cứu thông tin hồ sơ từ hệ thống một cửa",
+      "startDate": "13\/01\/2025",
+      "endDate": "13\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ tra cứu thông tin hồ sơ trên Cổng dịch vụ công quốc gia",
+      "startDate": "13\/01\/2025",
+      "endDate": "13\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ số liệu xử lý hồ sơ lên Cổng dịch vụ công quốc gia",
+      "startDate": "14\/01\/2025",
+      "endDate": "14\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ danh sách hồ sơ của người dùng lên Cổng dịch vụ công quốc gia",
+      "startDate": "14\/01\/2025",
+      "endDate": "14\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ số liệu thăm dò ý kiến người dùng lên Cổng dịch vụ công quốc gia",
+      "startDate": "14\/01\/2025",
+      "endDate": "14\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ hồ sơ lên Cổng dịch vụ công quốc gia",
+      "startDate": "14\/01\/2025",
+      "endDate": "14\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ kết quả giải quyết lên Cổng dịch vụ công quốc gia",
+      "startDate": "15\/01\/2025",
+      "endDate": "15\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ cập nhật tiến độ xử lý hồ sơ một cửa điện tử lên Cổng dịch vụ công quốc gia",
+      "startDate": "15\/01\/2025",
+      "endDate": "15\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy Giá trị TechnicalD của 1 tài khoản công dân\/doanh nghiệp qua MST\/CMND\/Căn cước\/Hộ chiếu từ Cổng dịch vụ công quốc gia",
+      "startDate": "15\/01\/2025",
+      "endDate": "15\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "IV",
+      "name": "Nhóm dịch vụ thanh toán điện tử",
+      "startDate": "16\/01\/2025",
+      "endDate": "17\/01\/2025",
+      "numberDay": 2,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ khởi tạo giao dịch thanh toán với nền tảng thanh toán của Cổng dịch vụ công quốc gia",
+      "startDate": "16\/01\/2025",
+      "endDate": "16\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ tra cứu lịch sử giao dịch trên nền tảng thanh toán của Cổng dịch vụ công quốc gia",
+      "startDate": "16\/01\/2025",
+      "endDate": "16\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ lấy biên lai thanh toán từ nền tảng thanh toán của Cổng dịch vụ công quốc gia",
+      "startDate": "16\/01\/2025",
+      "endDate": "16\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Dịch vụ đồng bộ thông tin tài khoản thụ hưởng từ Cổng dịch vụ công quốc gia",
+      "startDate": "17\/01\/2025",
+      "endDate": "17\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Quản lý lịch sử giao dịch",
+      "startDate": "17\/01\/2025",
+      "endDate": "17\/01\/2025",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Sprint 3: Các dịch vụ thông tin",
+      "startDate": "18\/01\/2025",
+      "endDate": "20\/02\/2025",
+      "numberDay": 29,
+      "itemCategory": "sprint"
+     },
+     {
+      "Column1": "C",
+      "name": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "startDate": "18\/01\/2025",
+      "endDate": "20\/02\/2025",
+      "numberDay": 29,
+      "itemCategory": "categoryLevel1"
+     },
+     {
+      "Column1": "I",
+      "name": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "startDate": "18\/01\/2025",
+      "endDate": "21\/01\/2025",
+      "numberDay": 3,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy danh mục kỳ báo cáo",
+      "startDate": "18\/01\/2025",
+      "endDate": "18\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh mục chỉ tiêu báo cáo",
+      "startDate": "18\/01\/2025",
+      "endDate": "18\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách chế độ báo cáo",
+      "startDate": "18\/01\/2025",
+      "endDate": "18\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách cấu trúc biểu mẫu báo cáo cần thực hiện theo chế độ báo cáo",
+      "startDate": "20\/01\/2025",
+      "endDate": "20\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ gửi dữ liệu báo cáo",
+      "startDate": "20\/01\/2025",
+      "endDate": "20\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ đính chính dữ liệu báo cáo",
+      "startDate": "20\/01\/2025",
+      "endDate": "20\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ xóa dữ liệu báo cáo",
+      "startDate": "21\/01\/2025",
+      "endDate": "21\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin trạng thái báo cáo",
+      "startDate": "21\/01\/2025",
+      "endDate": "21\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ cập nhật trạng thái báo cáo",
+      "startDate": "21\/01\/2025",
+      "endDate": "21\/01\/2025"
+     },
+     {
+      "Column1": "II",
+      "name": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ chuyển hồ sơ từ phần mềm một cửa sang phần mềm QLVB&TNDH",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ gửi kết quả giải quyết HS từ phần mềm QLVB&TNĐH sang phần mềm một cửa",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025"
+     },
+     {
+      "Column1": "III",
+      "name": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ Xác nhận số định danh cá nhân và chứng minh nhân dân",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ Xác nhận số định danh cá nhân và chứng minh nhân dân",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ Tra cứu thông tin công dân",
+      "startDate": "22\/01\/2025",
+      "endDate": "22\/01\/2025"
+     },
+     {
+      "Column1": "IV",
+      "name": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "startDate": "23\/01\/2025",
+      "endDate": "23\/01\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ tiếp nhận hồ sơ một cửa",
+      "startDate": "23\/01\/2025",
+      "endDate": "23\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ cập nhật kết quả trả hồ sơ",
+      "startDate": "23\/01\/2025",
+      "endDate": "23\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ cập nhật trạng thái hồ sơ bổ sung",
+      "startDate": "23\/01\/2025",
+      "endDate": "23\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ gửi thông báo xử lý hồ sơ",
+      "startDate": "23\/01\/2025",
+      "endDate": "23\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ phản hồi hồ sơ sai kết quả",
+      "startDate": "23\/01\/2025",
+      "endDate": "23\/01\/2025"
+     },
+     {
+      "Column1": "V",
+      "name": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "startDate": "24\/01\/2025",
+      "endDate": "3\/02\/2025",
+      "numberDay": 9,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu về số liệu hiện trạng sử dụng đất",
+      "startDate": "24\/01\/2025",
+      "endDate": "24\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê hiện trạng sử dụng đất cấp quốc gia",
+      "startDate": "24\/01\/2025",
+      "endDate": "24\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê hiện trạng sử dụng đất cấp vùng kinh tế",
+      "startDate": "24\/01\/2025",
+      "endDate": "24\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê hiện trạng sử dụng đất cấp quốc gia theo đối tượng sử dụng đất\/đối tượng quản lý đất",
+      "startDate": "24\/01\/2025",
+      "endDate": "24\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh mục giai đoạn quy hoạch",
+      "startDate": "25\/01\/2025",
+      "endDate": "25\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu về số liệu quy hoạch sử dụng đất",
+      "startDate": "25\/01\/2025",
+      "endDate": "25\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu về công trình, dự án",
+      "startDate": "25\/01\/2025",
+      "endDate": "25\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin chi tiết công trình, dự án theo id",
+      "startDate": "25\/01\/2025",
+      "endDate": "25\/01\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy tất cả danh mục giai đoạn ban hành giá đất",
+      "startDate": "1\/02\/2025",
+      "endDate": "1\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy tất cả danh mục nhóm loại đất",
+      "startDate": "1\/02\/2025",
+      "endDate": "1\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy tất cả danh mục loại xã, đô thị",
+      "startDate": "1\/02\/2025",
+      "endDate": "1\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy tất cả dữ liệu metadata khung giá đất",
+      "startDate": "3\/02\/2025",
+      "endDate": "3\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy tất cả dữ liệu metadata bảng giá đất",
+      "startDate": "3\/02\/2025",
+      "endDate": "3\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu metadata bảng giá đất theo mã tỉnh",
+      "startDate": "3\/02\/2025",
+      "endDate": "3\/02\/2025"
+     },
+     {
+      "Column1": "VI",
+      "name": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "startDate": "4\/02\/2025",
+      "endDate": "5\/02\/2025",
+      "numberDay": 2,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách các cơ sở khám bệnh, chữa bệnh trên địa bàn",
+      "startDate": "4\/02\/2025",
+      "endDate": "4\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin chi tiết cơ sở khám bệnh, chữa bệnh trên địa bàn theo mã cơ sở khám bệnh, chữa bệnh",
+      "startDate": "4\/02\/2025",
+      "endDate": "4\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách y, bác sĩ hành nghề khám bệnh, chữa bệnh trên địa bàn",
+      "startDate": "4\/02\/2025",
+      "endDate": "4\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin chi tiết y, bác sĩ hành nghề khám bệnh, chữa bệnh theo mã y, bác sĩ",
+      "startDate": "5\/02\/2025",
+      "endDate": "5\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy thông tin chứng chỉ hành nghề của y, bác sĩ theo mã y, bác sĩ",
+      "startDate": "5\/02\/2025",
+      "endDate": "5\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ tải file chứng chỉ hành nghề điện tử của y, bác sĩ theo mã y, bác sĩ",
+      "startDate": "5\/02\/2025",
+      "endDate": "5\/02\/2025"
+     },
+     {
+      "Column1": "VII",
+      "name": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "startDate": "6\/02\/2025",
+      "endDate": "7\/02\/2025",
+      "numberDay": 2,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Quản lý danh sách các trường học trên địa bàn tham gia kết nối, chia sẻ học bạ điện tử",
+      "startDate": "6\/02\/2025",
+      "endDate": "6\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách trường học trên địa bàn tham gia kết nối, chia sẻ học bạ điện tử",
+      "startDate": "6\/02\/2025",
+      "endDate": "6\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ chuyển dữ liệu học bạ điện tử của học sinh",
+      "startDate": "6\/02\/2025",
+      "endDate": "6\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu học bạ điện tử của học sinh theo mã số học bạ",
+      "startDate": "7\/02\/2025",
+      "endDate": "7\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu các học bạ điện tử của học sinh theo mã số học sinh",
+      "startDate": "7\/02\/2025",
+      "endDate": "7\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu các học bạ điện tử của học sinh theo các thông tin của học sinh",
+      "startDate": "7\/02\/2025",
+      "endDate": "7\/02\/2025"
+     },
+     {
+      "Column1": "VIII",
+      "name": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "startDate": "8\/02\/2025",
+      "endDate": "10\/02\/2025",
+      "numberDay": 2,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Quản lý danh sách các bệnh viện trên địa bàn tham gia kết nối, chia sẻ bệnh án điện tử",
+      "startDate": "8\/02\/2025",
+      "endDate": "8\/02\/2025"
+     },
+     {
+      "name": "Quản lý danh sách mã mẫu bệnh án điện tử",
+      "startDate": "8\/02\/2025",
+      "endDate": "8\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách bệnh viện trên địa bàn tham gia kết nối, chia sẻ bệnh án điện tử",
+      "startDate": "8\/02\/2025",
+      "endDate": "8\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách mã mẫu bệnh án điện tử",
+      "startDate": "8\/02\/2025",
+      "endDate": "8\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ chuyển dữ liệu bệnh án điện tử",
+      "startDate": "10\/02\/2025",
+      "endDate": "10\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu bệnh án điện tử theo mã bệnh án",
+      "startDate": "10\/02\/2025",
+      "endDate": "10\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy dữ liệu bệnh án điện tử theo mã người bệnh",
+      "startDate": "10\/02\/2025",
+      "endDate": "10\/02\/2025"
+     },
+     {
+      "Column1": "IX",
+      "name": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "startDate": "11\/02\/2025",
+      "endDate": "13\/02\/2025",
+      "numberDay": 3,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ thêm mới hồ sơ",
+      "startDate": "11\/02\/2025",
+      "endDate": "11\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thêm mới văn bản",
+      "startDate": "11\/02\/2025",
+      "endDate": "11\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thông tin metadata một hồ sơ",
+      "startDate": "11\/02\/2025",
+      "endDate": "11\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thông tin metadata một văn bản",
+      "startDate": "11\/02\/2025",
+      "endDate": "11\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy toàn bộ các văn bản của hồ sơ",
+      "startDate": "12\/02\/2025",
+      "endDate": "12\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy một văn bản",
+      "startDate": "12\/02\/2025",
+      "endDate": "12\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê hồ sơ",
+      "startDate": "12\/02\/2025",
+      "endDate": "12\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê văn bản",
+      "startDate": "13\/02\/2025",
+      "endDate": "13\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ chuyển hồ sơ sang lưu trữ lịch sử",
+      "startDate": "13\/02\/2025",
+      "endDate": "13\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ chuyển văn bản sang lưu trữ lịch sử",
+      "startDate": "13\/02\/2025",
+      "endDate": "13\/02\/2025"
+     },
+     {
+      "Column1": "X",
+      "name": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "startDate": "14\/02\/2025",
+      "endDate": "14\/02\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách hồ sơ đăng ký đầu tư nước ngoài theo khoảng thời gian",
+      "startDate": "14\/02\/2025",
+      "endDate": "14\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy chi tiết một hồ sơ đăng ký đầu tư nước ngoài",
+      "startDate": "14\/02\/2025",
+      "endDate": "14\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách TTHC đầu tư nước nước ngoài",
+      "startDate": "14\/02\/2025",
+      "endDate": "14\/02\/2025"
+     },
+     {
+      "name": "Quản lý TTHC đầu tư nước ngoài",
+      "startDate": "14\/02\/2025",
+      "endDate": "14\/02\/2025"
+     },
+     {
+      "name": "Quản lý danh sách hồ sơ TTHC đầu tư nước ngoài",
+      "startDate": "14\/02\/2025",
+      "endDate": "14\/02\/2025"
+     },
+     {
+      "Column1": "XI",
+      "name": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "startDate": "15\/02\/2025",
+      "endDate": "15\/02\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách hồ sơ đăng ký đầu tư nước ngoài theo khoảng thời gian",
+      "startDate": "15\/02\/2025",
+      "endDate": "15\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy chi tiết một hồ sơ đăng ký đầu tư nước ngoài",
+      "startDate": "15\/02\/2025",
+      "endDate": "15\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách TTHC đầu tư nước nước ngoài",
+      "startDate": "15\/02\/2025",
+      "endDate": "15\/02\/2025"
+     },
+     {
+      "name": "Quản lý TTHC đầu tư nước ngoài",
+      "startDate": "15\/02\/2025",
+      "endDate": "15\/02\/2025"
+     },
+     {
+      "name": "Quản lý danh sách hồ sơ TTHC đầu tư nước ngoài",
+      "startDate": "15\/02\/2025",
+      "endDate": "15\/02\/2025"
+     },
+     {
+      "Column1": "XII",
+      "name": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "startDate": "17\/02\/2025",
+      "endDate": "17\/02\/2025",
+      "numberDay": 1,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách hồ sơ đăng ký cấp giấy phép lái xe",
+      "startDate": "17\/02\/2025",
+      "endDate": "17\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy chi tiết một hồ sơ đăng ký cấp giấy phép lái xe",
+      "startDate": "17\/02\/2025",
+      "endDate": "17\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ lấy danh sách TTHC cấp giấy phép lái xe",
+      "startDate": "17\/02\/2025",
+      "endDate": "17\/02\/2025"
+     },
+     {
+      "name": "Quản lý TTHC cấp giấy phép lái xe",
+      "startDate": "17\/02\/2025",
+      "endDate": "17\/02\/2025"
+     },
+     {
+      "name": "Quản lý danh sách hồ sơ TTHC cấp giấy phép lái xe",
+      "startDate": "17\/02\/2025",
+      "endDate": "17\/02\/2025"
+     },
+     {
+      "Column1": "XIII",
+      "name": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "startDate": "18\/02\/2025",
+      "endDate": "19\/02\/2025",
+      "numberDay": 2,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Dịch vụ thống kê số lượng tổ chức\/doanh nghiệp đến đăng ký tuyển dụng tại TTDVVL",
+      "startDate": "18\/02\/2025",
+      "endDate": "18\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê số lượng người lao động đến TTDVVL tư vấn việc làm, nghề nghiệp và các chế độ chính sách",
+      "startDate": "18\/02\/2025",
+      "endDate": "18\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê số lượng người lao động tham gia bảo hiểm thất nghiệp đến TTDVVL nhận bảo hiểm thất nghiệp",
+      "startDate": "18\/02\/2025",
+      "endDate": "18\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê số lượng người lao động tham gia bảo hiểm thất nghiệp đến TTDVVL chấp thuận tư vấn học nghề",
+      "startDate": "19\/02\/2025",
+      "endDate": "19\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê số lượng người lao động tham gia bảo hiểm thất nghiệp đến TTDVVL chấp thuận giới thiệu việc làm",
+      "startDate": "19\/02\/2025",
+      "endDate": "19\/02\/2025"
+     },
+     {
+      "name": "Dịch vụ thống kê số lượng phiên giao dịch việc làm được tổ chức tại TTDVVL",
+      "startDate": "19\/02\/2025",
+      "endDate": "19\/02\/2025"
+     },
+     {
+      "Column1": "A",
+      "name": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Phần mềm quản lý, vận hành LGSP"
+     },
+     {
+      "name": "Phần mềm quản lý danh mục điện tử dùng chung"
+     },
+     {
+      "Column1": "B",
+      "name": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công"
+     },
+     {
+      "name": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc"
+     },
+     {
+      "name": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ"
+     },
+     {
+      "name": "Nhóm dịch vụ thanh toán điện tử"
+     },
+     {
+      "Column1": "C",
+      "name": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "A",
+      "name": "CÁC PHẦN MỀM VẬN HÀNH (02 phần mềm)",
+      "startDate": "11\/03\/2025",
+      "endDate": "19\/03\/2025",
+      "numberDay": 8,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Phần mềm quản lý, vận hành LGSP",
+      "startDate": "11\/03\/2025",
+      "endDate": "11\/03\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Phần mềm quản lý danh mục điện tử dùng chung",
+      "startDate": "12\/03\/2025",
+      "endDate": "19\/03\/2025",
+      "numberDay": 7,
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "B",
+      "name": "CÁC DỊCH VỤ DÙNG CHUNG (04 nhóm)",
+      "startDate": "20\/03\/2025",
+      "endDate": "26\/03\/2025",
+      "numberDay": 6,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Nhóm dịch vụ nền tảng quản lý nội dung hành chính công",
+      "startDate": "20\/03\/2025",
+      "endDate": "20\/03\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ nền tảng quản lý văn bản, công việc",
+      "startDate": "21\/03\/2025",
+      "endDate": "22\/03\/2025",
+      "numberDay": 2,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ nền tảng xử lý hồ sơ nghiệp vụ",
+      "startDate": "24\/03\/2025",
+      "endDate": "25\/03\/2025",
+      "numberDay": 2,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ thanh toán điện tử",
+      "startDate": "26\/03\/2025",
+      "endDate": "26\/03\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "Column1": "C",
+      "name": " NHÓM CÁC DỊCH VỤ THÔNG TIN (13 nhóm)",
+      "startDate": "27\/03\/2025",
+      "endDate": "12\/04\/2025",
+      "numberDay": 15,
+      "itemCategory": "categoryLevel2"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp hệ thống thông tin báo cáo quốc gia",
+      "startDate": "27\/03\/2025",
+      "endDate": "28\/03\/2025",
+      "numberDay": 2,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Tích hợp PMQuản lý văn bản và tác nghiệp điều hành với phần mềm một cửa",
+      "startDate": "28\/03\/2025",
+      "endDate": "28\/03\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp CSDLQG về dân cư",
+      "startDate": "29\/03\/2025",
+      "endDate": "29\/03\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp Một cửa điện tử với VBDLIS",
+      "startDate": "29\/03\/2025",
+      "endDate": "29\/03\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp Cơ sở dữ liệu đất đai quốc gia",
+      "startDate": "30\/03\/2025",
+      "endDate": "2\/04\/2025",
+      "numberDay": 3,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp dữ liệu hành nghề khám bệnh, chữa bệnh",
+      "startDate": "3\/04\/2025",
+      "endDate": "3\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp dữ liệu học bạ điện tử",
+      "startDate": "4\/04\/2025",
+      "endDate": "4\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp dữ liệu bệnh án điện tử",
+      "startDate": "5\/04\/2025",
+      "endDate": "5\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp lưu trữ cơ quan",
+      "startDate": "7\/04\/2025",
+      "endDate": "8\/04\/2025",
+      "numberDay": 2,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp Đầu tư nước ngoài",
+      "startDate": "8\/04\/2025",
+      "endDate": "8\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp hệ thống quản lý vận tải đường bộ của Bộ GTVT",
+      "startDate": "9\/04\/2025",
+      "endDate": "9\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp hệ thống cấp giấy phép lái xe",
+      "startDate": "11\/04\/2025",
+      "endDate": "11\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     },
+     {
+      "name": "Nhóm dịch vụ tích hợp lĩnh vực lao động việc làm",
+      "startDate": "12\/04\/2025",
+      "endDate": "12\/04\/2025",
+      "numberDay": 1,
+      "itemCategory": "task"
+     }
+    ]
+    }

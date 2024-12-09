@@ -11,7 +11,7 @@ const mongodLogShema = new mongoose.Schema(
     attr: { type: Object }, // Trường attr chứa các thông tin bổ sung (nếu có)
   },
   {
-    collection: "mongo_logs3",
+    collection: "mongo_logs",
   }
 );
 
