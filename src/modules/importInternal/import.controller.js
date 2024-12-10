@@ -1,4 +1,8 @@
-const { createSprint, createCategory } = require("./import.service");
+const {
+  createSprint,
+  createCategory,
+  createTask,
+} = require("./import.service");
 
 const run = async (req, res, next) => {
   try {
@@ -17,7 +21,7 @@ const run = async (req, res, next) => {
     let personCharge = "665d161e6603465907b4185b"; //
     let nameProject = "tung2"; //
     let token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjA0OTlmZTljMDRiZTc0YjhiZWFjOGVmIiwiaWF0IjoxNzMzNzQxMDUwLCJleHAiOjE3NDU3NDEwNTB9.3kQ4SjNbWG5BJB5fNZGGmepp2GrZravWO6mbKnGUicE"; //
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjA0OTlmZTljMDRiZTc0YjhiZWFjOGVmIiwiaWF0IjoxNzMzODEyMzQ4LCJleHAiOjE3NDU4MTIzNDh9.yuxCJ6i_XyVPcUUQAoqGn-4nLYILbAKpxQxTGsf-KZo"; //
 
     for (const element of data) {
       if (!element.hasOwnProperty("Column1")) {
@@ -46,7 +50,7 @@ const run = async (req, res, next) => {
           CORE_BASE
         );
         sprint = response;
-        //console.log("sprint ", sprint.name);
+        console.log("sprint ", sprint.name);
       }
 
       if (element.itemCategory === "categoryLevel1") {
@@ -56,17 +60,17 @@ const run = async (req, res, next) => {
         categoryLevel1 = element.name;
 
         // tạo mới hạng mục ::
-        // const response = await createCategory(
-        //   projectId,
-        //   element.name,
-        //   element.startDate,
-        //   element.endDate,
-        //   element.numberDay,
-        //   null,
-        //   token,
-        //   CORE_BASE
-        // );
-        // categoryLevel1 = response._id;
+        const response = await createCategory(
+          projectId,
+          element.name,
+          element.startDate,
+          element.endDate,
+          element.numberDay,
+          null,
+          token,
+          CORE_BASE
+        );
+        categoryLevel1 = response._id;
       }
 
       if (element.itemCategory === "categoryLevel2") {
@@ -75,17 +79,17 @@ const run = async (req, res, next) => {
         }
         categoryLevel2 = element.name;
         // tạo mới hạng mục :: với cha là categoryLevel1
-        // const response = await createCategory(
-        //   projectId,
-        //   element.name,
-        //   element.startDate,
-        //   element.endDate,
-        //   element.numberDay,
-        //   categoryLevel1,
-        //   token,
-        //   CORE_BASE
-        // );
-        // categoryLevel2 = response._id;
+        const response = await createCategory(
+          projectId,
+          element.name,
+          element.startDate,
+          element.endDate,
+          element.numberDay,
+          categoryLevel1,
+          token,
+          CORE_BASE
+        );
+        categoryLevel2 = response._id;
       }
 
       if (element.itemCategory === "categoryLevel3") {
@@ -94,30 +98,54 @@ const run = async (req, res, next) => {
         }
         categoryLevel3 = element.name;
         // tạo mới hạng mục :: với cha là categoryLevel2 cha categoryLevel1
-        // const response = await createCategory(
-        //   projectId,
-        //   element.name,
-        //   element.startDate,
-        //   element.endDate,
-        //   element.numberDay,
-        //   categoryLevel2,
-        //   token,
-        //   CORE_BASE
-        // );
-        // categoryLevel3 = response._id;
+        const response = await createCategory(
+          projectId,
+          element.name,
+          element.startDate,
+          element.endDate,
+          element.numberDay,
+          categoryLevel2,
+          token,
+          CORE_BASE
+        );
+        categoryLevel3 = response._id;
       }
 
       // Xử lý task
       if (element.itemCategory === "task") {
         // tại mới task với id currentLv cao nhất nếu có
+        let categoryId;
+        if (categoryLevel3) {
+          // categoryLevel3
+          categoryId = categoryLevel3;
+        } else if (categoryLevel2) {
+          // categoryLevel2
+          categoryId = categoryLevel2;
+        } else if (categoryLevel1) {
+          // categoryLevel1
+          categoryId = categoryLevel1;
+        }
+        const response = await createTask(
+          nameProject,
+          token,
+          CORE_BASE,
+          categoryId,
+          projectId,
+          sprint._id,
+          element.name,
+          formatToISO(element.startDate),
+          formatToISO(element.endDate)
+        );
+
         result.push({
-          task: element.name,
-          startDate: element.startDate,
-          endDate: element.endDate,
-          sprint: sprint._id,
-          categoryLevel3,
-          categoryLevel2,
-          categoryLevel1,
+          // task: element.name,
+          // startDate: element.startDate,
+          // endDate: element.endDate,
+          // sprint: sprint._id,
+          // categoryLevel3,
+          // categoryLevel2,
+          // categoryLevel1,
+          task: response,
         });
       }
     }
@@ -130,7 +158,18 @@ const run = async (req, res, next) => {
       return `${year}/${month}/${day}`;
     }
 
-    return res.json({ success: true, message: result });
+    function formatToISO(dateStr) {
+      // Split the date string (yyyy/MM/dd) into parts
+      const [year, month, day] = dateStr.split("/");
+
+      // Create a new Date object (Month is 0-indexed in JavaScript)
+      const date = new Date(Date.UTC(year, month - 1, day));
+
+      // Return the ISO string
+      return date.toISOString();
+    }
+
+    return res.json({ success: true, count: result.length });
   } catch (error) {
     return res.json({ success: false, message: error.message });
   }

@@ -56,6 +56,75 @@ const createSprint = async (
     throw error;
   }
 };
+const createTask = async (
+  nameProject,
+  tokenBearer,
+  coreBase,
+  categoryId,
+  projectId,
+  sprintId,
+  name,
+  startDate,
+  endDate
+) => {
+  try {
+    const url = `${coreBase}/api/tasks`;
+    const token = tokenBearer; // Bearer token
+
+    // Dữ liệu gửi đi
+    const data = {
+      nameProject: nameProject,
+      projectId: projectId,
+      projectCategoryId: categoryId,
+      itemCategory: "Task",
+      sprintId: sprintId,
+      name: name,
+      startDate: startDate,
+      endDate: endDate,
+      taskStatus: 1,
+      priority: 3,
+      inCharge: [],
+      taskManager: [],
+      progress: 0,
+      join: [],
+      resultDocuments: [],
+      support: [],
+      kanbanStatus: 1,
+      finishDate: null,
+      relatedDocument: [],
+      taskResult: [],
+      assessmentResult: [],
+      finalDate: "",
+      periodProject: null,
+      isObligatory: true,
+    };
+    //console.log("🚀 ~ data:", data);
+
+    // Cấu hình Header
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`, // Thêm token vào Header
+        "Content-Type": "application/json", // Định dạng JSON
+      },
+      httpsAgent: new https.Agent({
+        rejectUnauthorized: false, // Bỏ qua xác minh SSL
+      }),
+    };
+
+    // Gửi yêu cầu POST
+    const response = await axios.post(url, data, config);
+
+    if (response.data.success == true) {
+      console.log("OK == Response data:", response.data); // Log kết quả trả về
+      // console.log("OK"); // Log kết quả trả về
+      return response.data.data;
+    }
+    return false;
+  } catch (error) {
+    console.error("Error:", error.response?.data || error.message); // Log lỗi
+    throw error;
+  }
+};
 const createCategory = async (
   projectId,
   name,
@@ -194,4 +263,5 @@ function hasSlash(str) {
 module.exports = {
   createSprint,
   createCategory,
+  createTask,
 };
