@@ -4,9 +4,9 @@ const {
   createTask,
 } = require("./import.service");
 
-const run = async (req, res, next) => {
+const importJsonTaskCategorySprint = async (req, res, next) => {
   try {
-    const { data } = req.body;
+    const { data, projectId, personCharge, nameProject } = req.body;
     if (!data) {
       return res.json({ success: false, message: "No data provided" });
     }
@@ -16,13 +16,24 @@ const run = async (req, res, next) => {
     let categoryLevel2 = null;
     let categoryLevel3 = null;
     let result = [];
-    let CORE_BASE = "https://administrator.lifetek.vn:250"; //
-    let projectId = "6756718d0bad4b7476d46ab4"; //
-    let personCharge = "665d161e6603465907b4185b"; //
-    let nameProject = "tung2"; //
-    let token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjA0OTlmZTljMDRiZTc0YjhiZWFjOGVmIiwiaWF0IjoxNzMzODEyMzQ4LCJleHAiOjE3NDU4MTIzNDh9.yuxCJ6i_XyVPcUUQAoqGn-4nLYILbAKpxQxTGsf-KZo"; //
 
+    // let CORE_BASE = `${req.protocol}://${req.headers.host}`;
+    let CORE_BASE = "https://administrator.lifetek.vn:250"; //
+
+    const authHeader = req.headers["authorization"];
+
+    if (!authHeader) {
+      return res
+        .status(401)
+        .json({ message: "No Authorization header provided" });
+    }
+    const token = authHeader.split(" ")[1];
+
+    if (!token) {
+      return res
+        .status(401)
+        .json({ message: "Invalid Authorization header format" });
+    }
     for (const element of data) {
       if (!element.hasOwnProperty("Column1")) {
         element.Column1 = ""; // Thêm trường Column1 nếu chưa tồn tại
@@ -116,13 +127,10 @@ const run = async (req, res, next) => {
         // tại mới task với id currentLv cao nhất nếu có
         let categoryId;
         if (categoryLevel3) {
-          // categoryLevel3
           categoryId = categoryLevel3;
         } else if (categoryLevel2) {
-          // categoryLevel2
           categoryId = categoryLevel2;
         } else if (categoryLevel1) {
-          // categoryLevel1
           categoryId = categoryLevel1;
         }
         const response = await createTask(
@@ -176,5 +184,5 @@ const run = async (req, res, next) => {
 };
 
 module.exports = {
-  run,
+  importJsonTaskCategorySprint,
 };
